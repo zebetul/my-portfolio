@@ -1,8 +1,8 @@
 const AboutMe = () => {
   return (
-    <div>
-      <h1>About Me</h1>
-    </div>
+    <main className="mx-auto">
+      <h1 className="my-5 text-3xl">About Me</h1>
+    </main>
   );
 };
 export default AboutMe;

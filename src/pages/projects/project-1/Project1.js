@@ -1,8 +1,8 @@
 const Project1 = () => {
   return (
-    <div>
-      <h1>Project 1</h1>
-    </div>
+    <main className="mx-auto">
+      <h1 className="my-5 text-3xl">Project 1</h1>
+    </main>
   );
 };
 export default Project1;

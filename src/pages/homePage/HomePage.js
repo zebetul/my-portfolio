@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom";
+import SectionHero from "./sectionHero/SectionHero";
+import ProjectArticle from "./projectArticle/ProjectArticle";
+import { PROJECTS } from "../../constants/constants";
 
 const HomePage = () => {
+  console.log(PROJECTS);
+
   return (
-    <div className="home-page">
-      <h1>Home Page</h1>
+    <main className="home-page mx-auto">
+      <SectionHero />
 
-      <Link to="/about_me">About Me</Link>
-
-      <Link to="/project_1">Project 1.</Link>
-
-      <Link to="/project_2">Project 2.</Link>
-
-      <Link to="/project_3">Project 3.</Link>
-
-      <Link to="/project_4">Project 4.</Link>
-    </div>
+      <section className="section_projects my-5 flex flex-col items-center gap-32">
+        {PROJECTS.map((project) => (
+          <ProjectArticle project={project} />
+        ))}
+      </section>
+    </main>
   );
 };
 export default HomePage;
