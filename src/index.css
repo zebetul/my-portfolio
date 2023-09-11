@@ -9,8 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
-  color: #d1d1d1;
+  font-weight: 500;
+  background: #131b2b;
+  /* color: #d1d1d1; */
+  color: #9fa3a8;
 }
 
 code {
@@ -20,17 +22,23 @@ code {
 
 /* Custom helpers */
 .bg-first {
-  background-color: #000000;
+  background-color: #0a1216;
 }
 
 .bg-second {
-  background-color: #333333;
+  background-color: rgba(0, 238, 255, 0.103);
 }
 
 .text-first {
-  color: #d1d1d1;
+  /* color: #d1d1d1; */
+  color: #9fa3a8;
 }
 
 .text-second {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #dbe1e7;
+}
+
+.text-accent {
+  color: rgb(0, 238, 255);
 }

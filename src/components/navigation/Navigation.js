@@ -6,7 +6,7 @@ const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="flex sticky top-0 left-0 w-full bg-black h-10 z-10">
+    <nav className="flex sticky top-0 left-0 w-full h-10 z-10">
       <button
         className={`md:hidden ${showMenu ? "hidden" : ""}`}
         onClick={() => setShowMenu(!showMenu)}
@@ -22,8 +22,9 @@ const Navigation = () => {
       </button>
 
       <ul
-        className={`absolute md:relative md:ml-auto md:flex md:flex-row gap-5 bg-black
-      ${showMenu ? "block" : "hidden"}
+        className={`absolute md:relative md:ml-auto md:flex md:flex-row gap-5 ${
+          showMenu ? "block" : "hidden"
+        }
       `}
       >
         <li>

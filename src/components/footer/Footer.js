@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="footer mt-5 flex flex-col items-center">
+    <footer className="footer my-10 flex flex-col items-center">
       <h3 className="footer_container_title my-5">Contact</h3>
       <ul className="footer_container_list flex flex-col md:flex-row items-center gap-5">
         <li className="footer_container_list_item">
