@@ -12,7 +12,7 @@ body {
   font-weight: 500;
   background: #131b2b;
   /* color: #d1d1d1; */
-  color: #9fa3a8;
+  color: #7589a5;
 }
 
 code {
@@ -26,19 +26,19 @@ code {
 }
 
 .bg-second {
-  background-color: rgba(0, 238, 255, 0.103);
+  background-color: #1c333f;
 }
 
 .text-first {
   /* color: #d1d1d1; */
-  color: #9fa3a8;
+  color: #7589a5;
 }
 
 .text-second {
   /* color: #ffffff; */
-  color: #dbe1e7;
+  color: #bacbe4;
 }
 
 .text-accent {
-  color: rgb(0, 238, 255);
+  color: #62fff2;
 }

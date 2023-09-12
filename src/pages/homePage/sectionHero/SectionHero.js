@@ -1,30 +1,44 @@
+import { useState } from "react";
+import CustomLink from "../../../components/common/customLink/CustomLink";
 import { Link } from "react-router-dom";
-import { PiArrowRightLight } from "react-icons/pi";
 
 const SectionHero = () => {
-  return (
-    <section className="section_hero mx-auto h-96 mt-20 mb-40 max-w-lg p-10 flex flex-col place-content-center">
-      <h1 className="section_hero__title">Hi, my name is</h1>
+  const [isHovered, setIsHovered] = useState(false);
 
-      <h1 className="section_hero__title md:mb-0 text-4xl text-white">
+  return (
+    <section className="section_hero mx-auto xl:fixed xl:top-0 xl:right-1/2 xl:w-1/2 h-96 mt-32 mb-40 max-w-lg p-10 flex flex-col place-content-center">
+      <h1 className="section_hero__title mb-2">Hi, my name is</h1>
+
+      <h1 className="section_hero__title mb-5 text-4xl text-white">
         Cristian Sebeni
       </h1>
 
-      <h1 className="section_hero__title mb-5 ml-auto">
+      <h1 className="section_hero__title mb-10 ml-auto">
         but you can call me
         <span className="ml-4 text-4xl text-white">Zebe</span>
       </h1>
 
-      <p className="section_hero__subtitle mb-2 text-lg">
-        I am a beginner but passionate software developer specialized in
-        JavaScript, familiar with React and Node.js. I also worked with
-        PostgreSQL and AWS.
-      </p>
+      <div
+        className="cursor-pointer"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <Link to="/about_me">
+          <p
+            className={`section_hero_subtitle text-md
+      ${isHovered ? "text-second" : ""}`}
+          >
+            I am a dedicated and aspiring software developer with a
+            specialization in JavaScript, demonstrating proficiency in React and
+            Node.js. My experience extends to working with databases like
+            PostgreSQL and cloud technologies on platforms such as AWS. I am
+            committed to continuous learning and growth in the ever-evolving
+            field of web development.
+          </p>
 
-      <Link to="/about_me" className="flex flex-row items-center text-second">
-        more about me
-        <PiArrowRightLight className="ml-1" />
-      </Link>
+          <CustomLink textContent="more about me" isHovered={isHovered} />
+        </Link>
+      </div>
     </section>
   );
 };

@@ -51,7 +51,7 @@ const Navigation = () => {
           <NavLink
             className="no-underline"
             onClick={() => setShowMenu(false)}
-            to="/project_restil"
+            to="/restil"
           >
             Project 1
           </NavLink>
@@ -61,7 +61,7 @@ const Navigation = () => {
           <NavLink
             className="no-underline"
             onClick={() => setShowMenu(false)}
-            to="/project_flex"
+            to="/flex"
           >
             Project 2
           </NavLink>
@@ -71,7 +71,7 @@ const Navigation = () => {
           <NavLink
             className="no-underline"
             onClick={() => setShowMenu(false)}
-            to="/project_just_tripppin"
+            to="/just_tripppin"
           >
             Project 3
           </NavLink>
@@ -81,7 +81,7 @@ const Navigation = () => {
           <NavLink
             className="no-underline"
             onClick={() => setShowMenu(false)}
-            to="/project_pdf_form_filler"
+            to="/pdf_form_filler"
           >
             Project 4
           </NavLink>
