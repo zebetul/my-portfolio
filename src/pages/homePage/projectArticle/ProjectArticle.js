@@ -30,7 +30,7 @@ const ProjectArticle = ({ project }) => {
             {description}
           </p>
 
-          <div className="flex flex-row flex-wrap gap-2 mt-3">
+          <div className="project_stack_container flex flex-row flex-wrap gap-2 mt-3">
             {project.stack.map((tech) => (
               <span
                 className="text-xs bg-second text-accent px-2 py-1 rounded-md"

@@ -1,6 +1,7 @@
+import { PROJECTS } from "../../constants/constants";
 import SectionHero from "./sectionHero/SectionHero";
 import ProjectArticle from "./projectArticle/ProjectArticle";
-import { PROJECTS } from "../../constants/constants";
+import Footer from "../../components/footer/Footer";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,8 @@ const HomePage = () => {
           <ProjectArticle project={project} key={project.name} />
         ))}
       </section>
+
+      <Footer />
     </main>
   );
 };
