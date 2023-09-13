@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
+import { PROJECTS } from "./constants/constants";
 // import Navigation from "./components/navigation/Navigation";
+import Footer from "./components/footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import AboutMe from "./pages/aboutMe/AboutMe";
 import ProjectPage from "./pages/project/ProjectPage";
-import { PROJECTS } from "./constants/constants";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           element={<ProjectPage project={PROJECTS[3]} />}
         />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
