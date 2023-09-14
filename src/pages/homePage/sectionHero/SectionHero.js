@@ -7,7 +7,7 @@ const SectionHero = () => {
 
   return (
     <Link to="/about_me">
-      <section className="section_hero mx-auto xl:fixed xl:-top-10 xl:w-1/2 xl:h-screen h-96 mt-32 xl:mt-0 mb-40 p-10 flex flex-col items-center justify-center cursor-pointer">
+      <section className="section_hero mx-auto xl:fixed xl:-top-20 xl:w-1/2 xl:h-screen h-96 mt-32 xl:mt-0 mb-40 p-10 flex flex-col items-center justify-center cursor-pointer">
         <div
           className="section_hero_container max-w-lg flex flex-col"
           onMouseEnter={() => setIsHovered(true)}
@@ -30,7 +30,7 @@ const SectionHero = () => {
           >
             I am a dedicated software developer specializing in JavaScript,
             proficient in React and Node.js, with experience in PostgreSQL and
-            AWS. I am committed to continuous learning in web development.
+            AWS. I am committed to continuous learning and improving.
           </p>
 
           <CustomLink textContent="more about me" isHovered={isHovered} />

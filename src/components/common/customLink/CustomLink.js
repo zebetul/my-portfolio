@@ -2,7 +2,7 @@ import { PiArrowRightLight } from "react-icons/pi";
 
 const CustomLink = ({ textContent, isHovered }) => {
   return (
-    <p
+    <button
       className={`w-max mb-3 flex flex-row items-center text-xl text-second ${
         isHovered ? "text-accent" : ""
       }`}
@@ -14,7 +14,7 @@ const CustomLink = ({ textContent, isHovered }) => {
           isHovered ? "translate-x-2 transition-transform" : ""
         }`}
       />
-    </p>
+    </button>
   );
 };
 export default CustomLink;

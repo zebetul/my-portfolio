@@ -16,6 +16,22 @@ export const PROJECTS = [
       "Google 0Auth",
       "Render",
       "Cloudflare",
+      "PWA",
+    ],
+    objectives:
+      "The main goal was to create a full-stack web application from scratch and gain experience in the process. I wanted to learn how to build a full-stack application, how to deploy it, and how to maintain it. I also wanted to learn how to use a database and how to interact with it. I wanted to learn how to use a cloud service and how to deploy a website on it. I wanted to learn how to use a CDN and how to configure it. I wanted to learn how to use a domain name and how to configure it. I wanted to learn how to use a third-party authentication service and how to integrate it into my application. I wanted to learn how to use a CSS framework and how to customize it. I wanted to learn how to use a UI library and how to customize it. I wanted to learn how to use a CSS preprocessor and how to customize it. I wanted to learn how to use a CSS-in-JS library and how to customize it. I wanted to learn how to use a CSS utility library and how to customize it.",
+    backgroundStory:
+      "I started learning React in the summer of 2020 and I was very excited about it. I wanted to build a full-stack application from scratch and gain experience in the process. I wanted to learn how to build a full-stack application, how to deploy it, and how to maintain it. I also wanted to learn how to use a database and how to interact with it. I wanted to learn how to use a cloud service and how to deploy a website on it. I wanted to learn how to use a CDN and how to configure it. I wanted to learn how to use a domain name and how to configure it. I wanted to learn how to use a third-party authentication service and how to integrate it into my application. I wanted to learn how to use a CSS framework and how to customize it. I wanted to learn how to use a UI library and how to customize it. I wanted to learn how to use a CSS preprocessor and how to customize it. I wanted to learn how to use a CSS-in-JS library and how to customize it. I wanted to learn how to use a CSS utility library and how to customize it.",
+    techDetails:
+      "The app is built with React, Node, Express, and PSQL. I used Bootstrap for the UI, Material-UI for the UI components, Styled-Components for the CSS-in-JS, and Tailwind CSS for the CSS utility classes. I used AWS S3 for storing the images, AWS SES for sending emails, AWS CloudFront for the CDN, AWS Route 53 for the domain name, AWS Certificate Manager for the SSL certificate, and AWS Elastic Beanstalk for the deployment. I used Google 0Auth for the authentication service. I used Render for the Node server and Cloudflare for the DNS.",
+    whatIHaveLearned: [
+      "Developed a full-stack web application using React, Node, Express, and PSQL.",
+      "Utilized the Bootstrap framework for enhancing the user interface (UI).",
+      "Utilized the Material-UI library for enhancing the user interface (UI).",
+      "Utilized the Styled-Components library for enhancing the user interface (UI).",
+      "Utilized the Tailwind CSS library for enhancing the user interface (UI).",
+      "Utilized the AWS S3 service for storing the images.",
+      "Utilized the AWS SES service for sending emails.",
     ],
   },
 
@@ -26,7 +42,21 @@ export const PROJECTS = [
     image: "/assets/project_Images/flex_img.png",
     siteURL: "https://flex-flag-game.netlify.app",
     detailsURL: "/flex",
-    stack: ["JavaScript", "ES6", "SCSS", "HTML", "Parcel", "Netlify"],
+    stack: ["JavaScript", "ESM", "SCSS", "HTML", "Parcel", "Netlify"],
+    objectives:
+      "The main goal was to create a fun game that tests your knowledge about the flags of the world. I wanted to learn how to use the fetch API and how to work with JSON data. I wanted to learn how to use the async/await syntax and how to work with promises. I wanted to learn how to use the Parcel bundler and how to configure it. I wanted to learn how to use the Netlify service and how to deploy a website on it.",
+    backgroundStory:
+      "I started learning JavaScript in the summer of 2020 and I was very excited about it. I wanted to create a fun game that tests your knowledge about the flags of the world. I wanted to learn how to use the fetch API and how to work with JSON data. I wanted to learn how to use the async/await syntax and how to work with promises. I wanted to learn how to use the Parcel bundler and how to configure it. I wanted to learn how to use the Netlify service and how to deploy a website on it.",
+    techDetails:
+      "The app is built with HTML, CSS, and JavaScript. I used SCSS for the CSS preprocessor and Parcel for the bundler. I used the fetch API for fetching the data and the async/await syntax for working with promises. I used Netlify for the deployment.",
+    whatIHaveLearned: [
+      "Developed a web application using HTML, CSS, and JavaScript.",
+      "Utilized the SCSS preprocessor for enhancing the user interface (UI).",
+      "Utilized the Parcel bundler for bundling the files.",
+      "Utilized the Netlify service for deploying the website.",
+      "Utilized the fetch API for fetching the data.",
+      "Utilized the async/await syntax for working with promises.",
+    ],
   },
 
   {
@@ -36,7 +66,19 @@ export const PROJECTS = [
     image: "/assets/project_Images/just_tripppin_img.png",
     siteURL: "https://just-tripppin.netlify.app",
     detailsURL: "/just_tripppin",
-    stack: ["HTML", "SCSS", "JavaScript", "ES6", "Parcel", "Netlify"],
+    stack: ["HTML", "SCSS", "JavaScript", "ESM", "Parcel", "Netlify"],
+    objectives:
+      "The main goal was to create a mockup website for learning purposes. I wanted to learn how to use the Parcel bundler and how to configure it. I wanted to learn how to use the Netlify service and how to deploy a website on it.",
+    backgroundStory:
+      "I started learning JavaScript in the summer of 2020 and I was very excited about it. I wanted to create a mockup website for learning purposes. I wanted to learn how to use the Parcel bundler and how to configure it. I wanted to learn how to use the Netlify service and how to deploy a website on it.",
+    techDetails:
+      "The app is built with HTML, CSS, and JavaScript. I used SCSS for the CSS preprocessor and Parcel for the bundler. I used Netlify for the deployment.",
+    whatIHaveLearned: [
+      "Developed a web application using HTML, CSS, and JavaScript.",
+      "Utilized the SCSS preprocessor for enhancing the user interface (UI).",
+      "Utilized the Parcel bundler for bundling the files.",
+      "Utilized the Netlify service for deploying the website.",
+    ],
   },
 
   {
