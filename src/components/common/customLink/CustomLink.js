@@ -1,11 +1,11 @@
 import { PiArrowRightLight } from "react-icons/pi";
 
-const CustomLink = ({ textContent, isHovered }) => {
+const CustomLink = ({ textContent, isHovered, className }) => {
   return (
     <button
-      className={`w-max mb-3 flex flex-row items-center text-xl text-second ${
+      className={`w-max flex flex-row items-center text-xl text-second ${
         isHovered ? "text-accent" : ""
-      }`}
+      } ${className}`}
     >
       {textContent}
 

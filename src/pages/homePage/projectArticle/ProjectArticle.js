@@ -13,7 +13,7 @@ const ProjectArticle = ({ project }) => {
   return (
     <div
       className={`project-article rounded-sm flex flex-col md:flex-row-reverse gap-5 md:gap-10 px-10 py-16 ${
-        isHovered ? "bg-gray-800" : ""
+        isHovered ? "bg-second" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -24,16 +24,24 @@ const ProjectArticle = ({ project }) => {
         onMouseLeave={() => setIsTextHovered(false)}
       >
         <Link to={detailsURL}>
-          <CustomLink textContent={name} isHovered={isTextHovered} />
+          <CustomLink
+            textContent={name}
+            isHovered={isTextHovered}
+            className="mb-3"
+          />
 
-          <p className={`text-sm ${isHovered ? "text-second" : ""}`}>
+          <p
+            className={`text-sm ml-1 border-l border-accent pl-5 ${
+              isHovered ? "text-second" : ""
+            }`}
+          >
             {description}
           </p>
 
           <div className="project_stack_container flex flex-row flex-wrap gap-2 mt-3">
             {project.stack.map((tech) => (
               <span
-                className="text-xs bg-second text-accent px-2 py-1 rounded-md"
+                className="text-xs bg-pills text-accent px-2 py-1 rounded-md"
                 key={tech}
               >
                 {tech}
@@ -60,7 +68,7 @@ const ProjectArticle = ({ project }) => {
 
           <div
             className={`image-overlay bg-first absolute inset-0 ${
-              isHovered ? "opacity-0" : "opacity-30"
+              isHovered ? "opacity-0" : "opacity-20"
             }`}
           ></div>
         </div>

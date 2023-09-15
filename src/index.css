@@ -26,7 +26,11 @@ code {
 }
 
 .bg-second {
-  background-color: #1c333f;
+  background-color: #ffffff11;
+}
+
+.bg-pills {
+  background-color: #223b4b;
 }
 
 .text-first {
@@ -41,4 +45,8 @@ code {
 
 .text-accent {
   color: #62fff2;
+}
+
+.border-accent {
+  border-color: #62fff2;
 }

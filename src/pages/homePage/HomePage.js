@@ -1,8 +1,13 @@
 import { PROJECTS } from "../../constants/constants";
 import SectionHero from "./sectionHero/SectionHero";
 import ProjectArticle from "./projectArticle/ProjectArticle";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="home-page">
       <SectionHero />

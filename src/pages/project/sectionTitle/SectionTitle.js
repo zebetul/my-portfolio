@@ -1,36 +1,52 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   PiArrowLeftLight,
   PiArrowRightLight,
   PiArrowUpRightLight,
 } from "react-icons/pi";
+import { PROJECTS } from "../../../constants/constants";
 
 const SectionTitle = ({ project }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [nextProject, setNextProject] = useState("");
+  const [isTitleHovered, setIsTitleHovered] = useState(false);
+  const [isProjectsButtonHovered, setIsProjectsButtonHovered] = useState(false);
+  const [isNextButtonHovered, setIsNextButtonHovered] = useState(false);
 
   const { name, image, siteURL } = project;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const projectIndex = PROJECTS.findIndex((project) => project.name === name);
+
+    if (projectIndex === PROJECTS.length - 1) {
+      setNextProject(PROJECTS[0].detailsURL);
+    } else {
+      setNextProject(PROJECTS[projectIndex + 1].detailsURL);
+    }
+  }, [name]);
 
   return (
     <section className="project_image xl:fixed xl:-top-20 xl:w-1/2 xl:h-screen flex flex-col xl:justify-center items-center">
       <a
-        className="article_image_container mb-10"
+        className="article_image_container mb-20"
         href={siteURL}
         target="_blank"
         rel="noopener noreferrer"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        onMouseEnter={() => setIsTitleHovered(true)}
+        onMouseLeave={() => setIsTitleHovered(false)}
       >
         <p
           className={`mb-5 flex flex-row items-end justify-center text-4xl font-semibold text-second
-            ${isHovered ? "text-accent" : ""}
+            ${isTitleHovered ? "text-accent" : ""}
             `}
         >
           {name}
 
           <PiArrowUpRightLight
             className={`ml-1 mb-0.5 ${
-              isHovered
+              isTitleHovered
                 ? "translate-x-2 -translate-y-2 transition-transform"
                 : ""
             }`}
@@ -47,26 +63,48 @@ const SectionTitle = ({ project }) => {
 
           <div
             className={`image-overlay bg-first absolute inset-0 ${
-              isHovered ? "opacity-0" : "opacity-30"
+              isTitleHovered ? "opacity-0" : "opacity-10"
             }`}
           ></div>
         </div>
       </a>
 
-      <div className="buttons_container flex justify-between text-second text-xl">
+      <div className="buttons_container flex text-second text-xl">
         <Link to="/">
-          <button className="button_back flex items-center">
-            <PiArrowLeftLight />
+          <button
+            className={`button_back flex items-center ${
+              isProjectsButtonHovered ? "text-accent" : ""
+            }`}
+            onMouseEnter={() => setIsProjectsButtonHovered(true)}
+            onMouseLeave={() => setIsProjectsButtonHovered(false)}
+          >
+            <PiArrowLeftLight
+              className={
+                isProjectsButtonHovered
+                  ? "-translate-x-2 transition-transform"
+                  : ""
+              }
+            />
 
-            <span className="ml-1">Back</span>
+            <span className="ml-1">back to projects</span>
           </button>
         </Link>
 
-        <Link to="/">
-          <button className="button_back flex items-center">
-            <span className="ml-1">Back</span>
+        <Link to={nextProject}>
+          <button
+            className={`button_back ml-12 md:ml-28 flex items-center ${
+              isNextButtonHovered ? "text-accent" : ""
+            }`}
+            onMouseEnter={() => setIsNextButtonHovered(true)}
+            onMouseLeave={() => setIsNextButtonHovered(false)}
+          >
+            <span>next project</span>
 
-            <PiArrowRightLight />
+            <PiArrowRightLight
+              className={`ml-1 ${
+                isNextButtonHovered ? "translate-x-2 transition-transform" : ""
+              }`}
+            />
           </button>
         </Link>
       </div>
