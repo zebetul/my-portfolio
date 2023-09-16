@@ -1,10 +1,10 @@
 import { PiArrowUpRightLight } from "react-icons/pi";
 
-const CustomAnchor = ({ textContent, isHovered }) => {
+const CustomAnchor = ({ textContent, isHovered, className }) => {
   return (
     <p
       className={`w-max flex flex-row items-end text-md font-semibold text-second
-      ${isHovered ? "text-accent" : ""}
+      ${isHovered ? "text-accent" : ""} ${className}
       `}
     >
       {textContent}

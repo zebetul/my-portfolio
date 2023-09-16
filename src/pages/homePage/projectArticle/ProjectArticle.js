@@ -28,6 +28,7 @@ const ProjectArticle = ({ project }) => {
             textContent={name}
             isHovered={isTextHovered}
             className="mb-3"
+            arrow={"right"}
           />
 
           <p

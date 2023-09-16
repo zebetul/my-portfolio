@@ -78,12 +78,12 @@ const SectionDetails = ({ project }) => {
           What I've learned
         </h2>
 
-        <ul className="wil_container ml-0 flex flex-col gap-4">
+        <ul className="wil_container ml-0 flex flex-col gap-5">
           {whatIHaveLearned.map((item, index) => (
             <li className="wil_item flex flex-row" key={index}>
-              <AiOutlineCheck className="text-accent w-1/12" size={25} />
+              <AiOutlineCheck className="text-accent w-1/12" size={20} />
 
-              <p className="wil_item_text w-11/12">{item}</p>
+              <p className="wil_item_text w-11/12 text-sm">{item}</p>
             </li>
           ))}
         </ul>
