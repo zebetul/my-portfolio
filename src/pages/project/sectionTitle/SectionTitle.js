@@ -38,16 +38,16 @@ const SectionTitle = ({ project }) => {
   }, [name]);
 
   return (
-    <section className="project_image xl:fixed xl:-top-20 xl:w-1/2 xl:h-screen flex flex-col xl:justify-center items-center">
+    <section className="project_image xl:fixed xl:-top-10 xl:w-1/2 xl:h-screen mt-5 xl:mt-0 flex flex-col xl:justify-center items-center">
       <a
-        className="article_image_container mb-5 max-w-xs w-full h-80"
+        className="article_image_container mb-14 max-w-xs w-full h-80"
         href={siteURL}
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setIsTitleHovered(true)}
         onMouseLeave={() => setIsTitleHovered(false)}
       >
-        <div className="image_container relative max-w-md rounded-md overflow-hidden">
+        <div className="image_container mb-2 relative max-w-md rounded-md overflow-hidden">
           <img
             className="project_image_img w-full h-auto"
             src={image}
@@ -64,15 +64,19 @@ const SectionTitle = ({ project }) => {
         <CustomAnchor
           textContent={name}
           isHovered={isTitleHovered}
-          className="mb-2 text-lg"
+          className="mb-2 text-2xl"
         />
 
-        <p className="project_details ml-1 border-l border-accent pl-5 text-sm">
+        <p
+          className={`project_details ml-1 border-l border-accent pl-5
+        ${isTitleHovered ? "text-second" : ""}
+        `}
+        >
           {description}
         </p>
       </a>
 
-      <div className="buttons_container mb-10 max-w-xs w-full flex justify-between px-2 text-second text-xl">
+      <div className="buttons_container mb-5 max-w-xs w-full flex justify-between px-2 text-second text-xl">
         <Link to={previousProject}>
           <CustomLink
             textContent={"previous"}

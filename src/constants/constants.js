@@ -154,7 +154,7 @@ export const PROJECTS = [
 
     detailsURL: "/flex",
 
-    stack: ["JavaScript", "ESM", "SCSS", "HTML", "Parcel", "Netlify"],
+    stack: ["JavaScript", "ESM", "SASS", "HTML", "Parcel", "Netlify"],
 
     objective:
       "Learn asynchronous JavaScript, fetch API and async await syntax.",
