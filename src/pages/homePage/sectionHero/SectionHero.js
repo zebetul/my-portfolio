@@ -37,7 +37,11 @@ const SectionHero = () => {
               AWS. I am committed to continuous learning and improving.
             </p>
 
-            <CustomLink textContent="more about me" isHovered={isHovered} />
+            <CustomLink
+              textContent="more about me"
+              isHovered={isHovered}
+              arrow={"right"}
+            />
           </div>
         </div>
       </Link>

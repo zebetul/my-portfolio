@@ -50,7 +50,7 @@ const SectionDetails = ({ project }) => {
             ))}
           </div>
 
-          <ul className="tech_list flex flex-col gap-4">
+          <ul className="tech_list flex flex-col gap-6">
             {Object.entries(techDetails).map(([key, value]) => (
               <li
                 className="tech_item flex flex-col md:flex-row md:items-start"
@@ -78,7 +78,7 @@ const SectionDetails = ({ project }) => {
           What I've learned
         </h2>
 
-        <ul className="wil_container ml-0 flex flex-col gap-5">
+        <ul className="wil_container ml-0 flex flex-col gap-6">
           {whatIHaveLearned.map((item, index) => (
             <li className="wil_item flex flex-row" key={index}>
               <AiOutlineCheck className="text-accent w-1/12" size={20} />
