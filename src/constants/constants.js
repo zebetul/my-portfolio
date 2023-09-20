@@ -348,3 +348,70 @@ export const PROJECTS = [
     ],
   },
 ];
+
+export const ABOUT_ME = {
+  image: "/assets/heroImage/hero_bg_stars_B&W_trimmed.jpeg",
+
+  description: [
+    "I was born and raised in a small town in northern Romania during a time when our primary sources of information and knowledge, apart from school, were limited to one TV channel controlled by a communist government, and our main communication channel was the wired phone, subject to monitoring and censorship by the ruling party. It was due to this upbringing that I learned to truly value and grasp the transformative potential of unrestricted access to information provided by the internet and the latest technological advancements.",
+
+    "My first encounter with IT was when I was 12, and I frequented the local IT club. It was love at first sight. I was fascinated by how you could manipulate electricity, transform it into information, perform magic with programming languages, and produce a game on a screen. I became addicted; I wanted to understand all of it.",
+
+    "Fast forward in time, and I found myself a student at Timisoara's West University's IT Faculty. After three years at the university, due to some unexpected events, my life took a different course. I was forced to interrupt my studies, return home, and start working as a math teacher. Later, I switched to a sales manager/trainer position in a multinational telecom company. Over the years, my career evolved in a direction that did not intersect with the IT field. During this time, I gained valuable experience working with people, leading teams, learning negotiation skills, and communicating assertively. It was a productive period for enhancing my soft skills, and I did find some aspects of it enjoyable. Meeting new people, teaching, and sharing ideas had their merits, but...",
+
+    "Now, I want to return to my roots, back to being a geek. So, I embarked on a journey of requalification, rediscovering the beauty of coding and creating new things from scratch. I want to explore, learn, and, if possible, innovate. I want to feel that I'm contributing something new to this field.",
+
+    "This website serves as a record of my progress along this path. Thank you for your patience in reading this, and welcome along for the ride.",
+  ],
+
+  stack: [
+    "JavaScript",
+    "React",
+    "Node",
+    "Express",
+    "PostgreSQL",
+    "AWS",
+    "HTML",
+    "CSS",
+    "SASS",
+    "Bootstrap",
+    "Tailwind CSS",
+  ],
+
+  tools: [
+    "VS Code",
+    "Git",
+    "GitHub",
+    "Chat GPT",
+    "GitHub Copilot",
+    "Trello",
+    "draw.io",
+    "Netlify",
+    "Render",
+    "Cloudflare",
+  ],
+
+  interests: [
+    "Frontend Development",
+    "Backend Development",
+    "Full-Stack Development",
+    "Cloud Computing",
+    "Machine Learning",
+  ],
+
+  education: [
+    {
+      name: "Udemy",
+      description:
+        "The Complete JavaScript Course 2021: From Zero to Expert! by Jonas Schmedtmann",
+      image: "/assets/education/udemy.png",
+      url: "https://www.udemy.com/course/the-complete-javascript-course/",
+    },
+  ],
+
+  contact: {
+    email: "sebenicristi@gmail.com",
+    linkedIn: "https://www.linkedin.com/in/cristian-sebeni-79515926b/",
+    github: "https://github.com/zebetul",
+  },
+};

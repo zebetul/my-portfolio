@@ -1,19 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ABOUT_ME } from "../../../constants/constants";
 import CustomLink from "../../../components/common/customLink/CustomLink";
 
 const AboutMeHero = () => {
   const [isProjectsButtonHovered, setIsProjectsButtonHovered] = useState(false);
 
   return (
-    <div className="flex flex-col w-full xl:h-full items-center xl:justify-center">
+    <div className="flex flex-col w-full xl:h-full items-center xl:justify-center gap-10">
       <img
         className="max-w-xs h-auto rounded-md"
-        src="https://rfs-user-images.s3.eu-north-1.amazonaws.com/userprofile-2/0.jpeg"
-        alt="placeholder"
+        src={ABOUT_ME.image}
+        alt="hero_image"
       />
-
-      <h1>Title</h1>
 
       <Link to="/">
         <CustomLink

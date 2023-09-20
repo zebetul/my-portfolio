@@ -13,7 +13,7 @@ const HomePage = () => {
       <SectionHero />
 
       <section className="section_projects xl:w-1/2 xl:ml-auto flex flex-col items-center xl:items-start">
-        <h2 className="section_projects__title mb-10 text-xl font-semibold mx-auto text-second">
+        <h2 className="section_projects__title max-w-lg w-full xl:ml-10 mb-10 mt-10 text-center text-xl font-semibold text-second">
           Projects
         </h2>
 

@@ -1,5 +1,6 @@
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import "./Footer.css";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { ABOUT_ME } from "../../constants/constants";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
             className="footer_link"
             target="_blank"
             rel="noopener noreferrer"
-            href="mailto: sebenicristi@gmail.com"
+            href={`mailto: ${ABOUT_ME.contact.email}`}
           >
             <AiOutlineMail size={30} />
           </a>
@@ -24,7 +25,7 @@ const Footer = () => {
             className="footer_link"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/cristian-sebeni-79515926b/"
+            href={ABOUT_ME.contact.linkedIn}
           >
             <AiFillLinkedin size={30} />
           </a>
@@ -35,7 +36,7 @@ const Footer = () => {
             className="footer_link"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/zebetul"
+            href={ABOUT_ME.contact.github}
           >
             <AiFillGithub size={30} />
           </a>
