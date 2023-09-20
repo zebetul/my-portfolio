@@ -9,7 +9,7 @@ const AboutMeHero = () => {
   return (
     <div className="flex flex-col w-full xl:h-full items-center xl:justify-center gap-10">
       <img
-        className="max-w-xs h-auto rounded-md"
+        className="mt-2 max-w-xs h-auto rounded-md"
         src={ABOUT_ME.image}
         alt="hero_image"
       />

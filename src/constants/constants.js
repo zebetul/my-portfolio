@@ -5,7 +5,7 @@ export const PROJECTS = [
     description:
       "Online secondhand clothing marketplace for the Romanian market, promoting sustainable shopping.",
 
-    image: "/assets/project_Images/restil_img.png",
+    image: "/assets/images/restil.webp",
 
     siteURL: "https://restil.ro/",
 
@@ -146,7 +146,7 @@ export const PROJECTS = [
     description:
       "A desktop game that tests your knowledge about the flags of the world. Optimized for large screens only.",
 
-    image: "/assets/project_Images/flex_img.png",
+    image: "/assets/images/flex.webp",
 
     siteURL: "https://flex-flag-game.netlify.app",
 
@@ -222,7 +222,7 @@ export const PROJECTS = [
     description:
       "A travel website providing inspiration for your next adventure. Created as a mockup for learning purposes.",
 
-    image: "/assets/project_Images/just_tripppin_img.png",
+    image: "/assets/images/just_tripppin.webp",
 
     siteURL: "https://just-tripppin.netlify.app",
 
@@ -288,7 +288,7 @@ export const PROJECTS = [
     description:
       "A simple web app that enables users to fill in four different PDF forms with the same data and download the completed forms.",
 
-    image: "/assets/project_Images/pdf_form_filler_img.png",
+    image: "/assets/images/pdf_form_filler.webp",
 
     siteURL: "https://pdf-form-filler.onrender.com",
 
@@ -350,7 +350,7 @@ export const PROJECTS = [
 ];
 
 export const ABOUT_ME = {
-  image: "/assets/heroImage/hero_bg_stars_B&W_trimmed.jpeg",
+  image: "/assets/images/hero.webp",
 
   description: [
     "I was born and raised in a small town in northern Romania during a time when our primary sources of information and knowledge, apart from school, were limited to one TV channel controlled by a communist government, and our main communication channel was the wired phone, subject to monitoring and censorship by the ruling party. It was due to this upbringing that I learned to truly value and grasp the transformative potential of unrestricted access to information provided by the internet and the latest technological advancements.",
