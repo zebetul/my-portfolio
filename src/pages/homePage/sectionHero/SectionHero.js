@@ -6,7 +6,7 @@ const SectionHero = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="section_hero mx-auto xl:fixed xl:-top-20 xl:w-1/2 xl:h-screen h-96 mt-32 xl:mt-0 mb-40 p-10 flex flex-col items-center justify-center">
+    <section className="section_hero mx-auto xl:fixed xl:-top-20 xl:w-1/2 xl:h-screen h-96 mt-32 xl:mt-0 mb-28 p-10 flex flex-col items-center justify-center">
       <Link to="/about_me" className="cursor-pointer">
         <div
           className="section_hero_container max-w-lg flex flex-col"
