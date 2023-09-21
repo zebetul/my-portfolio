@@ -4,7 +4,7 @@ import { PROJECTS } from "../../../constants/constants";
 import CustomLink from "../../../components/common/customLink/CustomLink";
 import CustomAnchor from "../../../components/common/customAnchor/CustomAnchor";
 
-const SectionTitle = ({ project }) => {
+const SectionTitle = ({ project, setIsLoaded }) => {
   const [nextProject, setNextProject] = useState("");
   const [previousProject, setPreviousProject] = useState("");
   const [isTitleHovered, setIsTitleHovered] = useState(false);
@@ -52,6 +52,7 @@ const SectionTitle = ({ project }) => {
             className="project_image_img w-full h-auto"
             src={image}
             alt={name}
+            onLoad={() => setIsLoaded(true)}
           />
 
           <div

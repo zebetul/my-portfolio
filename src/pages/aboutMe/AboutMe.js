@@ -14,7 +14,7 @@ const AboutMe = () => {
       className="about_me_page"
       style={
         isLoaded
-          ? { opacity: 1, transition: "opacity 0.5s ease-in-out" }
+          ? { opacity: 1, transition: "opacity 1s ease-in-out" }
           : { opacity: 0 }
       }
     >
