@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ABOUT_ME } from "../../../constants/constants";
 import CustomLink from "../../../components/common/customLink/CustomLink";
 
-const AboutMeHero = () => {
+const AboutMeHero = ({ setIsLoaded }) => {
   const [isProjectsButtonHovered, setIsProjectsButtonHovered] = useState(false);
 
   return (
@@ -12,6 +12,7 @@ const AboutMeHero = () => {
         className="mt-2 max-w-xs h-auto rounded-md"
         src={ABOUT_ME.image}
         alt="hero_image"
+        onLoad={() => setIsLoaded(true)}
       />
 
       <Link to="/">
