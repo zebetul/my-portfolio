@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { PROJECTS } from "./constants/constants";
 // import Navigation from "./components/navigation/Navigation";
@@ -7,8 +8,36 @@ import AboutMe from "./pages/aboutMe/AboutMe";
 import ProjectPage from "./pages/project/ProjectPage";
 
 function App() {
+  const introAnimation = () => {
+    // eslint-disable-next-line no-undef
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+    tl.fromTo(
+      ".intro_animation",
+      {
+        y: 20,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        stagger: 0.7,
+      }
+    );
+
+    // eslint-disable-next-line no-undef
+    gsap.to(".App", {
+      opacity: 1,
+    });
+  };
+
+  useEffect(() => {
+    introAnimation();
+  }, []);
+
   return (
-    <div className="App flex flex-col">
+    <div className="App opacity-0 flex flex-col">
       {/* <Navigation /> */}
 
       <Routes>

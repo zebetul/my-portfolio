@@ -4,7 +4,7 @@ import { ABOUT_ME } from "../../constants/constants";
 
 const Footer = () => {
   return (
-    <footer className="footer my-10 xl:fixed xl:bottom-0 xl:w-1/2 w-full mx-auto flex flex-col items-center">
+    <footer className="footer intro_animation my-10 xl:fixed xl:bottom-0 xl:w-1/2 w-full mx-auto flex flex-col items-center">
       <h3 className="footer_container_title my-10 md:my-5">
         Let's work together:
       </h3>
