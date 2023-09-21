@@ -24,6 +24,19 @@ function App() {
         duration: 1.2,
         stagger: 0.7,
       }
+    ).fromTo(
+      ".article_animation",
+      {
+        x: 20,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.3,
+        stagger: 0.2,
+      },
+      "-=1.2"
     );
 
     // eslint-disable-next-line no-undef

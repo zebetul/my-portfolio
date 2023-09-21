@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import CustomLink from "../../../components/common/customLink/CustomLink";
 import CustomAnchor from "../../../components/common/customAnchor/CustomAnchor";
-import { useState } from "react";
 
 const ProjectArticle = ({ project }) => {
   const { name, description, image, siteURL, detailsURL } = project;
@@ -12,7 +12,7 @@ const ProjectArticle = ({ project }) => {
 
   return (
     <div
-      className={`project-article rounded-sm flex flex-col md:flex-row-reverse gap-5 md:gap-10 px-10 py-16 ${
+      className={`article_animation rounded-sm flex flex-col md:flex-row-reverse gap-5 md:gap-10 px-10 py-16 ${
         isHovered ? "bg-second" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
