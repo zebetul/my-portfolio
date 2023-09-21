@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "./sectionTitle/SectionTitle";
-import SectionDetails from "./sectionDetails/Sectiondetails";
+import SectionDetails from "./sectionDetails/SectionDetails";
 
 const ProjectPage = ({ project }) => {
   const [isLoaded, setIsLoaded] = useState(false);

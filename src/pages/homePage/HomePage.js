@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { PiArrowDownLight } from "react-icons/pi";
 import { PROJECTS } from "../../constants/constants";
 import SectionHero from "./sectionHero/SectionHero";
-import ProjectArticle from "./projectArticle/ProjectArticle";
+import SectionProjects from "./sectionProjects/sectionProjects";
 
 const HomePage = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const HomePage = () => {
         )}
 
         {PROJECTS.map((project) => (
-          <ProjectArticle project={project} key={project.name} />
+          <SectionProjects project={project} key={project.name} />
         ))}
       </section>
     </main>

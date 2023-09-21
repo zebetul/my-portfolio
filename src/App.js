@@ -4,8 +4,8 @@ import { PROJECTS } from "./constants/constants";
 // import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
-import AboutMe from "./pages/aboutMe/AboutMe";
-import ProjectPage from "./pages/project/ProjectPage";
+import AboutMePage from "./pages/aboutMePage/AboutMePage";
+import ProjectPage from "./pages/projectPage/ProjectPage";
 
 function App() {
   const introAnimation = () => {
@@ -27,13 +27,13 @@ function App() {
     ).fromTo(
       ".article_animation",
       {
-        x: 20,
+        y: 20,
         opacity: 0,
       },
       {
-        x: 0,
+        y: 0,
         opacity: 1,
-        duration: 0.3,
+        duration: 1.2,
         stagger: 0.2,
       },
       "-=1.2"
@@ -56,7 +56,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
 
-        <Route path="/about_me" element={<AboutMe />} />
+        <Route path="/about_me" element={<AboutMePage />} />
 
         <Route path="/restil" element={<ProjectPage project={PROJECTS[0]} />} />
 

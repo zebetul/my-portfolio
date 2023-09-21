@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CustomLink from "../../../components/common/customLink/CustomLink";
 import CustomAnchor from "../../../components/common/customAnchor/CustomAnchor";
 
-const ProjectArticle = ({ project }) => {
+const SectionProjects = ({ project }) => {
   const { name, description, image, siteURL, detailsURL } = project;
 
   const [isHovered, setIsHovered] = useState(false);
@@ -79,4 +79,4 @@ const ProjectArticle = ({ project }) => {
     </div>
   );
 };
-export default ProjectArticle;
+export default SectionProjects;

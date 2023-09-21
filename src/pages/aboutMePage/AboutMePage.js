@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutMeDetails from "./aboutMeDetails/AboutMeDetails";
-import AboutMeHero from "./aboutMeTitle/AboutMeHero";
+import AboutMeHero from "./aboutMeHero/AboutMeHero";
 
-const AboutMe = () => {
+const AboutMePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const AboutMe = () => {
     </main>
   );
 };
-export default AboutMe;
+export default AboutMePage;
