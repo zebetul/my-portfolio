@@ -11,25 +11,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
   color: #7589a5;
+  background-image: url("/public/assets/images/background_pattern/dark_geometric.png");
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  /* background: linear-gradient(90deg, #0a1216 0%, #0a1216da 100%); */
-  background-image: url("/public/assets/images/background_pattern/dark_geometric.png");
+body {
   background-repeat: repeat;
   background-attachment: fixed;
-  z-index: -1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@media (max-width: 1280px) {
+  body {
+    /* background: linear-gradient(90deg, #0a1216 0%, #0a1216da 100%); */
+    background-repeat: repeat;
+    background-attachment: scroll;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0a1216;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5a697e;
+  border-radius: 0.5em;
 }
 
 /* Custom helpers */

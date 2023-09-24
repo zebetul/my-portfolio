@@ -47,7 +47,7 @@ const SectionTitle = ({ project, setIsLoaded }) => {
         onMouseEnter={() => setIsTitleHovered(true)}
         onMouseLeave={() => setIsTitleHovered(false)}
       >
-        <div className="image_container mb-2 relative max-w-md rounded-md overflow-hidden border border-gray-500">
+        <div className="image_container mb-2 relative max-w-md rounded-md overflow-hidden">
           <img
             className="project_image_img w-full h-auto"
             src={image}
