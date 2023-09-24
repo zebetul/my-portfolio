@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+import BackgroundLayout from "./components/common/backgroundLayout/BackgroundLayout";
 import { PROJECTS } from "./constants/constants";
 // import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
@@ -50,25 +51,29 @@ function App() {
   }, []);
 
   return (
-    <div className="App opacity-0 flex flex-col">
-      {/* <Navigation /> */}
+    <BackgroundLayout>
+      <div className="App opacity-0 flex flex-col">
+        {/* <Navigation /> */}
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
 
-        <Route path="/about_me" element={<AboutMePage />} />
+          <Route path="/about_me" element={<AboutMePage />} />
 
-        {PROJECTS.map((project) => (
-          <Route
-            path={project.detailsURL}
-            element={<ProjectPage project={project} key={project.detailsURL} />}
-            key={project.name}
-          />
-        ))}
-      </Routes>
+          {PROJECTS.map((project) => (
+            <Route
+              path={project.detailsURL}
+              element={
+                <ProjectPage project={project} key={project.detailsURL} />
+              }
+              key={project.name}
+            />
+          ))}
+        </Routes>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </BackgroundLayout>
   );
 }
 export default App;

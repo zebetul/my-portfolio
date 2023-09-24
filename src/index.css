@@ -20,13 +20,21 @@ code {
     monospace;
 }
 
+.background-container {
+  /* background-image: url("/public/assets/images/background_pattern/prism.png"); */
+  /* background-image: url("/public/assets/images/background_pattern/bg_pat_3px.png"); */
+  /* background-image: url("/public/assets/images/background_pattern/connectwork.png"); */
+  /* background-image: url("/public/assets/images/background_pattern/binding_dark.png"); */
+  background-image: url("/public/assets/images/background_pattern/dark_geometric.png");
+}
+
 /* Custom helpers */
 .bg-first {
   background-color: #0a1216;
 }
 
 .bg-second {
-  background-color: #ffffff11;
+  background-color: #ffffff07;
 }
 
 .bg-pills {

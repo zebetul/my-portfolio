@@ -61,7 +61,7 @@ const SectionProjects = ({ project }) => {
         onMouseLeave={() => setIsImageHovered(false)}
       >
         <div
-          className={`article_image mt-2 mb-auto w-32 relative rounded-sm overflow-hidden ${
+          className={`article_image mt-2 mb-auto w-32 relative rounded-sm overflow-hidden border border-gray-500 ${
             siteURL ? "cursor-pointer" : ""
           }`}
         >

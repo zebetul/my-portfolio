@@ -360,7 +360,7 @@ export const PROJECTS = [
 
     gitHub: "https://github.com/zebetul/my-portfolio",
 
-    detailsURL: "/portfolio",
+    detailsURL: "/portfolio_website",
 
     stack: ["React", "Tailwind CSS", "Render", "GSAP"],
 
