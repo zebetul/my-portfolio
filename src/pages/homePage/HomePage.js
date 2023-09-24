@@ -1,16 +1,30 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { PiArrowDownLight } from "react-icons/pi";
 import { PROJECTS } from "../../constants/constants";
 import SectionHero from "./sectionHero/SectionHero";
 import SectionProjects from "./sectionProjects/sectionProjects";
 
 const HomePage = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <main className="home-page">
+    <main
+      className={`home-page ${
+        isVisible
+          ? "opacity-1 transition-opacity duration-500 ease-in-out"
+          : " opacity-0"
+      }`}
+    >
       <SectionHero />
 
       <section className="section_projects xl:w-1/2 xl:ml-auto flex flex-col items-center xl:items-start">

@@ -36,7 +36,7 @@ function App() {
         duration: 1.2,
         stagger: 0.2,
       },
-      "-=1.2"
+      "-=1.0"
     );
 
     // eslint-disable-next-line no-undef
@@ -58,19 +58,13 @@ function App() {
 
         <Route path="/about_me" element={<AboutMePage />} />
 
-        <Route path="/restil" element={<ProjectPage project={PROJECTS[0]} />} />
-
-        <Route path="/flex" element={<ProjectPage project={PROJECTS[1]} />} />
-
-        <Route
-          path="/just_tripppin"
-          element={<ProjectPage project={PROJECTS[2]} />}
-        />
-
-        <Route
-          path="/pdf_form_filler"
-          element={<ProjectPage project={PROJECTS[3]} />}
-        />
+        {PROJECTS.map((project) => (
+          <Route
+            path={project.detailsURL}
+            element={<ProjectPage project={project} key={project.detailsURL} />}
+            key={project.name}
+          />
+        ))}
       </Routes>
 
       <Footer />

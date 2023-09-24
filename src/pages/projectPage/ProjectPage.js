@@ -6,8 +6,6 @@ const ProjectPage = ({ project }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setIsLoaded(false);
-
     window.scrollTo(0, 0);
   }, [project]);
 
@@ -16,7 +14,7 @@ const ProjectPage = ({ project }) => {
       className="project_page"
       style={
         isLoaded
-          ? { opacity: 1, transition: "opacity 1s ease-in-out" }
+          ? { opacity: 1, transition: "opacity 0.5s ease-in-out" }
           : { opacity: 0 }
       }
     >
