@@ -40,8 +40,8 @@ const SectionTitle = ({ project, setIsLoaded }) => {
   return (
     <section className="project_image xl:fixed xl:-top-10 xl:w-1/2 xl:h-screen mt-5 xl:mt-0 flex flex-col xl:justify-center items-center">
       <a
+        href={siteURL || null}
         className="article_image_container mb-14 max-w-xs w-full h-80"
-        href={siteURL}
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setIsTitleHovered(true)}
@@ -66,6 +66,7 @@ const SectionTitle = ({ project, setIsLoaded }) => {
           textContent={name}
           isHovered={isTitleHovered}
           className="mb-2 text-2xl"
+          noArrow={siteURL ? false : true}
         />
 
         <p

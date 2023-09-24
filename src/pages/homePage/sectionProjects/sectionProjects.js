@@ -53,14 +53,18 @@ const SectionProjects = ({ project }) => {
       </div>
 
       <a
-        href={siteURL}
+        href={siteURL || null}
         target="_blank"
         rel="noopener noreferrer"
         className="article_image_container"
         onMouseEnter={() => setIsImageHovered(true)}
         onMouseLeave={() => setIsImageHovered(false)}
       >
-        <div className="article_image mt-2 mb-auto w-32 relative cursor-pointer rounded-sm overflow-hidden">
+        <div
+          className={`article_image mt-2 mb-auto w-32 relative rounded-sm overflow-hidden ${
+            siteURL ? "cursor-pointer" : ""
+          }`}
+        >
           <img
             className="article_image w-full h-full object-cover"
             src={image}
@@ -74,7 +78,9 @@ const SectionProjects = ({ project }) => {
           ></div>
         </div>
 
-        <CustomAnchor textContent="website" isHovered={isImageHovered} />
+        {siteURL && (
+          <CustomAnchor textContent="website" isHovered={isImageHovered} />
+        )}
       </a>
     </div>
   );
