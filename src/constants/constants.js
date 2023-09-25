@@ -78,16 +78,19 @@ export const PROJECTS = [
       "Data Protection":
         "Bcrypt library for password hashing. CORS is set up to allow only specified origins. Middleware protects private routes, authenticating users with session cookies.",
 
+      Authentication:
+        "Utilizes Google OAuth 2.0 and email/password sign-up (passwords hashed with bcrypt and saved to the database) for user authentication.",
+
+      Authorization: "Session cookies are employed for authorization.",
+
       "Image Processing":
         "Images are processed using the Sharp library before being uploaded to AWS.",
 
       "Image Storage":
         "The AWS S3 SDK is used to programmatically put, get, and delete images from the bucket.",
 
-      Authentication:
-        "Utilizes Google OAuth 2.0 and email/password sign-up (passwords hashed with bcrypt and saved to the database) for user authentication.",
-
-      Authorization: "Session cookies are employed for authorization.",
+      "PDF Handling":
+        "Utilizes the react-pdf library for embedding PDF documents in the app and displaying them as pages in the browser.",
 
       Performance: "Bundled with Webpack, polyfilled, and transpiled.",
 
@@ -100,7 +103,7 @@ export const PROJECTS = [
 
       "Email Server": "Utilizes AWS SES (Simple Email Service).",
 
-      Testing: "Google Lighthouse.",
+      Testing: "Google Lighthouse and manual testing.",
     },
 
     whatIHaveLearned: [
