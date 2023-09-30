@@ -9,7 +9,7 @@ const Footer = () => {
       <h3 className="footer_container_title my-10 md:my-5">
         Let's work together:
       </h3>
-      <ul className="footer_container_list flex flex-col md:flex-row items-center gap-10">
+      <ul className="footer_container_list flex flex-col md:flex-row items-center gap-10 text-accent">
         <li className="footer_container_list_item">
           <a
             className="footer_link"

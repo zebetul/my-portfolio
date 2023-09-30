@@ -16,8 +16,8 @@ const SectionHero = () => {
           <h1 className="intro_animation mb-2">Hi, my name is</h1>
 
           <h1 className="intro_animation mb-5 text-6xl text-white">
-            <span className={isHovered ? "text-accent" : ""}>C</span>
-            risti <span className={isHovered ? "text-accent" : ""}>S</span>
+            <span className="text-accent">C</span>
+            risti <span className="text-accent">S</span>
             ebeni
           </h1>
 
