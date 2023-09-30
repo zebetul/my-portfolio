@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { FaAddressCard } from "react-icons/fa";
 import { ABOUT_ME } from "../../constants/constants";
 
 const Footer = () => {
@@ -39,6 +40,17 @@ const Footer = () => {
             href={ABOUT_ME.contact.github}
           >
             <AiFillGithub size={30} />
+          </a>
+        </li>
+
+        <li className="footer_container_list_item">
+          <a
+            className="footer_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={ABOUT_ME.contact.cv}
+          >
+            <FaAddressCard size={30} />
           </a>
         </li>
       </ul>
