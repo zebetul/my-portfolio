@@ -9,6 +9,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 
 const CVPage = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -24,11 +25,20 @@ const CVPage = () => {
   }, []);
 
   return (
-    <main className="cv_page_container flex flex-col xl:items-center">
+    <main
+      className="cv_page_container flex flex-col xl:items-center"
+      style={
+        isLoaded
+          ? { opacity: 1, transition: "opacity 0.5s ease-in-out" }
+          : { opacity: 0 }
+      }
+    >
       <section className="cv_page_container_section xl:my-10">
         <Document
           className="cv_page_container_pdf relative"
           file={ABOUT_ME.contact.cv}
+          onLoadSuccess={() => setIsLoaded(true)}
+          onLoadError={() => setIsLoaded(false)}
         >
           <Page
             pageNumber={1}
