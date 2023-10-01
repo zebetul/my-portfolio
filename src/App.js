@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import AboutMePage from "./pages/aboutMePage/AboutMePage";
 import ProjectPage from "./pages/projectPage/ProjectPage";
+import CVPage from "./pages/cvPage/CVPage";
 
 function App() {
   const introAnimation = () => {
@@ -57,6 +58,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
 
         <Route path="/about_me" element={<AboutMePage />} />
+
+        <Route path="/cv" element={<CVPage />} />
 
         {PROJECTS.map((project) => (
           <Route
