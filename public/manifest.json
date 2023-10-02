@@ -1,15 +1,27 @@
 {
-  "short_name": "Portfolio",
-  "name": "Portfolio",
+  "short_name": "Cristi Sebeni - Portfolio",
+  "name": "Cristi Sebeni - Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon"
     }
+    {
+      "src": "favicon/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#000000"
 }
