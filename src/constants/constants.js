@@ -472,7 +472,7 @@ export const ABOUT_ME = {
 
   contact: {
     email: "sebenicristi@gmail.com",
-    linkedIn: "https://www.linkedin.com/in/cristian-sebeni-79515926b/",
+    linkedIn: "https://www.linkedin.com/in/cristi-sebeni",
     github: "https://github.com/zebetul",
     cv: "https://zebe-personal-bucket.s3.eu-west-1.amazonaws.com/portfolio-website/CV.pdf",
   },

@@ -1,5 +1,7 @@
 # My Portfolio Website
 
+[cristisebeni.dev](https://cristisebeni.dev/)
+
 Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a junior JavaScript software developer.
 
 ## About Me
@@ -8,33 +10,19 @@ I'm passionate about web development and constantly seeking opportunities to lea
 
 ## Portfolio
 
-Explore my projects in the "Portfolio" section, where you'll find a collection of my work. Each project is presented as an article, and you can click on them to view detailed project information.
+Explore my Portfolio in the "Projects" section, where you'll find a collection of my work. Each project is presented as an article, and you can click on them to view detailed project information.
 
 ## Contact Information
 
 If you'd like to get in touch or discuss potential collaborations, please feel free to reach out to me. You can find my contact information below:
 
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- GitHub: [Your GitHub Profile](https://github.com/your-profile/)
+- Email: [sebenicristi@gmail.com](mailto:sebenicristi@gmail.com)
+- LinkedIn: [linkedin.com/in/cristi-sebeni](https://www.linkedin.com/in/cristi-sebeni)
+- GitHub: [github.com/zebetul](https://github.com/zebetul)
 
 ## Downloadable CV
 
-For a detailed overview of my qualifications, you can download my CV [here](link-to-your-cv.pdf).
-
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone this repository.
-2. Navigate to the project directory in your terminal.
-3. Run `npm install` to install the necessary dependencies.
-4. Run `npm start` to start the development server.
-5. Open your browser and visit `http://localhost:3000` to view the website.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+For a detailed overview of my qualifications, you can download my CV [here](https://cristisebeni.dev/cv).
 
 ---
 
