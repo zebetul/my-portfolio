@@ -22,8 +22,8 @@ function App() {
       {
         y: 0,
         opacity: 1,
-        duration: 1.2,
-        stagger: 0.7,
+        duration: 0.8,
+        stagger: 0.3,
       }
     ).fromTo(
       ".article_animation",
@@ -34,15 +34,17 @@ function App() {
       {
         y: 0,
         opacity: 1,
-        duration: 1.2,
+        duration: 0.8,
         stagger: 0.2,
       },
-      "-=1.0"
+      "-=0.6"
     );
 
     // eslint-disable-next-line no-undef
     gsap.to(".App", {
       opacity: 1,
+      duration: 0.5,
+      ease: "power2.out",
     });
   };
 
