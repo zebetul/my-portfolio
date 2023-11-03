@@ -474,6 +474,6 @@ export const ABOUT_ME = {
     email: "sebenicristi@gmail.com",
     linkedIn: "https://www.linkedin.com/in/cristi-sebeni",
     github: "https://github.com/zebetul",
-    cv: "https://zebe-personal-bucket.s3.eu-west-1.amazonaws.com/portfolio-website/CV.pdf",
+    cv: "https://zebe-personal-bucket.s3.eu-west-1.amazonaws.com/portfolio-website/Cristi_Sebeni_CV.pdf",
   },
 };
