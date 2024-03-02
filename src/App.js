@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { PROJECTS } from "./constants/constants";
-// import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import AboutMePage from "./pages/aboutMePage/AboutMePage";

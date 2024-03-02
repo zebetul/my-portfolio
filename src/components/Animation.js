@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 function Animation({ children }) {
 	const introAnimation = () => {
+		// eslint-disable-next-line
 		const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
 		tl.fromTo(
@@ -31,6 +32,7 @@ function Animation({ children }) {
 			"-=0.6"
 		);
 
+		// eslint-disable-next-line
 		gsap.to(".App", {
 			opacity: 1,
 			duration: 0.5,
