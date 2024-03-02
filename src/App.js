@@ -7,73 +7,47 @@ import HomePage from "./pages/homePage/HomePage";
 import AboutMePage from "./pages/aboutMePage/AboutMePage";
 import ProjectPage from "./pages/projectPage/ProjectPage";
 import CVPage from "./pages/cvPage/CVPage";
+import Animation from "./components/Animation";
 
 function App() {
-  const introAnimation = () => {
-    // eslint-disable-next-line no-undef
-    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+	return (
+		<div className="App opacity-0 flex flex-col">
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<Animation>
+							<HomePage />
+						</Animation>
+					}
+				/>
 
-    tl.fromTo(
-      ".intro_animation",
-      {
-        y: 20,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.3,
-      }
-    ).fromTo(
-      ".article_animation",
-      {
-        y: 20,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        stagger: 0.2,
-      },
-      "-=0.6"
-    );
+				<Route
+					path="/about_me"
+					element={<AboutMePage />}
+				/>
 
-    // eslint-disable-next-line no-undef
-    gsap.to(".App", {
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.out",
-    });
-  };
+				<Route
+					path="/cv"
+					element={<CVPage />}
+				/>
 
-  useEffect(() => {
-    introAnimation();
-  }, []);
+				{PROJECTS.map((project) => (
+					<Route
+						path={project.detailsURL}
+						element={
+							<ProjectPage
+								project={project}
+								key={project.detailsURL}
+							/>
+						}
+						key={project.name}
+					/>
+				))}
+			</Routes>
 
-  return (
-    <div className="App opacity-0 flex flex-col">
-      {/* <Navigation /> */}
-
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-
-        <Route path="/about_me" element={<AboutMePage />} />
-
-        <Route path="/cv" element={<CVPage />} />
-
-        {PROJECTS.map((project) => (
-          <Route
-            path={project.detailsURL}
-            element={<ProjectPage project={project} key={project.detailsURL} />}
-            key={project.name}
-          />
-        ))}
-      </Routes>
-
-      <Footer />
-    </div>
-  );
+			<Footer />
+		</div>
+	);
 }
 export default App;
