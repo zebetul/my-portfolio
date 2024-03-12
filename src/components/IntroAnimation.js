@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-function Animation({ children }) {
+function IntroAnimation({ children }) {
 	const introAnimation = () => {
 		// eslint-disable-next-line
 		const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
@@ -14,7 +14,7 @@ function Animation({ children }) {
 			{
 				y: 0,
 				opacity: 1,
-				duration: 0.8,
+				duration: 0.5,
 				stagger: 0.3,
 			}
 		).fromTo(
@@ -26,18 +26,11 @@ function Animation({ children }) {
 			{
 				y: 0,
 				opacity: 1,
-				duration: 0.8,
+				duration: 0.5,
 				stagger: 0.2,
 			},
 			"-=0.6"
 		);
-
-		// eslint-disable-next-line
-		gsap.to(".App", {
-			opacity: 1,
-			duration: 0.5,
-			ease: "power2.out",
-		});
 	};
 
 	useEffect(() => {
@@ -47,4 +40,4 @@ function Animation({ children }) {
 	return <>{children}</>;
 }
 
-export default Animation;
+export default IntroAnimation;

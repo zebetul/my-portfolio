@@ -1,8 +1,8 @@
-# My Portfolio Website
+# Portfolio Website
 
 [cristisebeni.dev](https://cristisebeni.dev/)
 
-Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a junior JavaScript software developer.
+Welcome to my portfolio website! This project showcases my skills, projects, and experiences as a JavaScript software developer.
 
 ## About Me
 

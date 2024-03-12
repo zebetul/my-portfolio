@@ -1,23 +1,22 @@
-import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { PROJECTS } from "./constants/constants";
-import Footer from "./components/footer/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import AboutMePage from "./pages/aboutMePage/AboutMePage";
 import ProjectPage from "./pages/projectPage/ProjectPage";
 import CVPage from "./pages/cvPage/CVPage";
-import Animation from "./components/Animation";
+import IntroAnimation from "./components/IntroAnimation";
+import AppLayout from "./components/AppLayout";
 
 function App() {
 	return (
-		<div className="App opacity-0 flex flex-col">
-			<Routes>
+		<Routes>
+			<Route element={<AppLayout />}>
 				<Route
-					path="/"
+					index
 					element={
-						<Animation>
+						<IntroAnimation>
 							<HomePage />
-						</Animation>
+						</IntroAnimation>
 					}
 				/>
 
@@ -43,10 +42,8 @@ function App() {
 						key={project.name}
 					/>
 				))}
-			</Routes>
-
-			<Footer />
-		</div>
+			</Route>
+		</Routes>
 	);
 }
 export default App;
