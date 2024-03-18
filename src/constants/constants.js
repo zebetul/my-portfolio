@@ -144,6 +144,48 @@ export const PROJECTS = [
 	},
 
 	{
+		name: "Avocat Simona Oros",
+
+		description: "Landing page for a Romanian law firm.",
+
+		image: "/assets/images/lawyer_firm.webp",
+
+		siteURL: "https://avocatsatumare.ro",
+
+		gitHub: "https://github.com/zebetul/lawyer-firm",
+
+		detailsURL: "/avocat_simona_oros",
+
+		stack: ["React", "Gatsby", "GraphQL", "Tailwind CSS", "Netlify"],
+
+		objective:
+			"Create a landing page for a Romanian law firm with SEO as a priority.",
+
+		backgroundStory: [
+			"The customer's request was to create a landing page for her law firm. The main goal was to design a professional-looking website that inspires trust, is easily discoverable on the internet, and provides potential clients with essential information about the firm.",
+
+			"The website was developed using Gatsby, a static site generator, and React. The primary focus was on search engine optimization (SEO), ensuring the website ranks well on search engine results pages. The final site was deployed on Netlify for seamless hosting and continuous integration.",
+		],
+
+		techDetails: {
+			Frontend: "Built with Gatsby and React",
+
+			"Data Fetching": "Utilizes GraphQL for fetching data",
+
+			SEO: "Follows SEO best practices",
+		},
+
+		whatIHaveLearned: [
+			"Gatsby static site generator",
+			"Gatsby plugins: gatsby-plugin-image, gatsby-plugin-sharp, gatsby-source-filesystem, gatsby-transformer-remark",
+			"GraphQL data fetching",
+			"SEO best practices",
+			"Image optimization for web with Gatsby",
+			"LightHouse testing and improving performance, accessibility, best practices, and SEO",
+		],
+	},
+
+	{
 		name: "Flex",
 
 		description:
@@ -289,7 +331,7 @@ export const PROJECTS = [
 		name: "PDF Form Filler",
 
 		description:
-			"A simple web app that enables users to fill in four different PDF forms with the same data and download the completed forms.",
+			"A simple web app that enables users to fill in four different PDF forms with the same data and download the completed PDF documents.",
 
 		image: "/assets/images/pdf_form_filler.webp",
 

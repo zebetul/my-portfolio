@@ -12,7 +12,7 @@ const SectionDetails = ({ project }) => {
 
 	return (
 		<section className="project_details xl:w-1/2 xl:ml-auto my-20 flex flex-col items-center xl:items-start gap-20 px-4">
-			<article className="project_article article_objectives max-w-lg mr-auto">
+			<article className="project_article article_objectives max-w-lg mr-auto w-full">
 				<h2 className="article_title mb-5 text-second text-lg">
 					Main Objective
 				</h2>
@@ -22,7 +22,7 @@ const SectionDetails = ({ project }) => {
 				</p>
 			</article>
 
-			<article className="project_article article_tech max-w-lg">
+			<article className="project_article article_tech max-w-lg w-full">
 				<div className="tech_title_container mb-5 flex flex-row items-end">
 					<h2 className="article_title text-second text-lg">
 						Technical details
@@ -93,21 +93,23 @@ const SectionDetails = ({ project }) => {
 				</ul>
 			</article>
 
-			<article className="project_article article_story max-w-lg">
-				<h2 className="article_title mb-5 text-second text-lg">
-					Background story
-				</h2>
+			{backgroundStory && (
+				<article className="project_article article_story max-w-lg">
+					<h2 className="article_title mb-5 text-second text-lg">
+						Background story
+					</h2>
 
-				<div className="story_container ml-2 border-l border-accent pl-5 flex flex-col gap-5">
-					{backgroundStory.map((paragraph, index) => (
-						<p
-							className="article_text m-0 font-normal"
-							key={index}>
-							{paragraph}
-						</p>
-					))}
-				</div>
-			</article>
+					<div className="story_container ml-2 border-l border-accent pl-5 flex flex-col gap-5">
+						{backgroundStory?.map((paragraph, index) => (
+							<p
+								className="article_text m-0 font-normal"
+								key={index}>
+								{paragraph}
+							</p>
+						))}
+					</div>
+				</article>
+			)}
 		</section>
 	);
 };
