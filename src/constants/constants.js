@@ -1,5 +1,108 @@
 export const PROJECTS = [
 	{
+		name: "ePhones",
+
+		description:
+			"Phones and accesories online store dedicated to resellers from the Romanian market.",
+
+		image: "/assets/images/ephones.webp",
+
+		siteURL: "https://www.ephones.ro/",
+
+		// gitHub: "https://github.com/zebetul/refashion-secondhand-marketplace",
+
+		detailsURL: "/ephones",
+
+		stack: [
+			"React",
+			"Vite",
+			"React Router",
+			"TanStack Query",
+			"Tailwind CSS",
+			"Shadcn",
+			"Supabase",
+			"PSQL",
+			"Netlify",
+			"Cloudflare",
+			"PWA",
+		],
+
+		objective:
+			"Develop an online mobile phone store dedicated to B2B customers, focusing on Progressive Web App features and user experience.",
+
+		backgroundStory: [
+			"Businesses should register using email, name, password and Company data. The registration process should involve email verification.",
+
+			"Products should be displayed in a mobile-responsive grid layout; price and stock should not be visible to anonymous users.",
+
+			"Products page should have filtering and sorting options.",
+
+			"Users should be able to search for specific products.",
+
+			"Product page should display details and allow adding to cart only for authenticated users.",
+
+			"Authenticated users can add products to cart, create orders, and track their orders.",
+
+			"Authenticated users should be able to edit their data, such as delivery address.",
+
+			"Admin users should have access to a dashboard to upload, edit, or delete products.",
+
+			"Admin users should be able to check out and confirm orders.",
+
+			"Admin users should have access to the users list and statistical data.",
+		],
+
+		techDetails: {
+			Functionality:
+				"Users can search for items using various filters. They can also register to make purchases and manage their accounts.",
+
+			Frontend:
+				"Built with React using Vite for bundling, Tailwind CSS for styling and Shadcn as component library. Deployed on Netlify.",
+
+			UI: "Follows responsive design principles with a mobile-first approach.",
+
+			UX: "Enhanced engagement with product-focused image sliders.",
+
+			"Design pattern":
+				"Follows a minimalist design pattern, with a focus on showcasing listed products.",
+
+			PWA: "Implemented as a Progressive Web App (PWA) to provide users with offline access and an app-like experience.",
+
+			Backend:
+				"Used Supabase as BASS (Backend as a Service), Authentication and Authorization.",
+
+			"Data Protection":
+				"Used Postgers's RLS (Row Level Security) for data protection. SSL for secure data transfer.",
+
+			Authentication: "Through Supabase with JWT (JSON Web Tokens).",
+
+			"Image Storage": "Supabase Storage for storing images.",
+
+			Performance: "Bundled with Vite, polyfilled, and transpiled.",
+
+			"Version Control": "Git and GitHub.",
+
+			"CI/CD":
+				"Deployed through Netlify for Continuous Integration and Continuous Deployment.",
+
+			DNS: "Configured with Cloudflare.",
+
+			"Email Server": "Zoho Mail.",
+
+			Testing: "Google Lighthouse and manual testing.",
+		},
+
+		whatIHaveLearned: [
+			"Tanstack Query for data fetching and management.",
+
+			"Shadcn as a component library.",
+
+			"Supabase as BASS (Backend as a Service), Authentication and Authorization.",
+
+			"How to configure and use Zoho mail.",
+		],
+	},
+	{
 		name: "Restil",
 
 		description:
