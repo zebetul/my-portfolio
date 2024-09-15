@@ -365,6 +365,64 @@ export const PROJECTS = [
 	},
 
 	{
+		name: "Portfolio Website",
+
+		description:
+			"A portfolio website showcasing my projects, skills, and experience.",
+
+		image: "/assets/images/portfolio.webp",
+
+		siteURL: "",
+
+		gitHub: "https://github.com/zebetul/my-portfolio",
+
+		detailsURL: "/portfolio_website",
+
+		stack: ["React", "Tailwind CSS", "Render", "GSAP"],
+
+		objective:
+			"Design and develop a portfolio website using React and Tailwind.",
+
+		backgroundStory: [
+			"After completing several projects, I decided it was time to showcase them, along with my learning journey, gained experience, and skills, in a portfolio website.",
+
+			"I envisioned the app with a minimalist design and a dark mode, which I find more comfortable to use. The goal was to emphasize the projects and their details while creating an easy-to-navigate, responsive website that offers a pleasant user experience with clear and concise information.",
+
+			"For styling, I opted to use Tailwind CSS. I wanted to gain experience with this utility-first CSS framework, having already worked with Bootstrap. I found utility classes to be an efficient way to style components, and I had read that Tailwind is well-suited for small projects like this one.",
+
+			"To further enhance the user experience, I incorporated introductory animations using the GSAP library.",
+		],
+
+		techDetails: {
+			Functionality:
+				"Users can navigate the website and view my projects, skills, and background.",
+
+			Frontend:
+				"Built with React using Tailwind CSS utility classes for styling.",
+
+			UI: "Follows desktop-first design principles with responsive optimization for mobile viewing.",
+
+			UX: "Designed for easy navigation and provides clear and concise information.",
+
+			"Design Pattern":
+				"Follows a minimalist design pattern in dark mode, with a focus on showcasing projects.",
+
+			"Version Control": "Utilizes Git and GitHub for version control.",
+
+			"CI/CD":
+				"Deployed through Render for Continuous Integration and Continuous Deployment.",
+		},
+
+		whatIHaveLearned: [
+			"Enhanced my proficiency in React, including building responsive web applications and utilizing React's component-based architecture",
+
+			"Gained experience in using Tailwind CSS utility classes for efficient and responsive web styling.",
+
+			"Developed an understanding of design patterns, color theory, and typography to create visually appealing and user-friendly interfaces.",
+		],
+	},
+
+	{
 		name: "Just Tripppin'",
 
 		description:
@@ -493,64 +551,6 @@ export const PROJECTS = [
 			"Installed and configured Node.js on a remote machine for accessibility.",
 
 			"Enhanced problem-solving skills by addressing a real-world challenge posed by a friend.",
-		],
-	},
-
-	{
-		name: "Portfolio Website",
-
-		description:
-			"A portfolio website showcasing my projects, skills, and experience.",
-
-		image: "/assets/images/portfolio.webp",
-
-		siteURL: "",
-
-		gitHub: "https://github.com/zebetul/my-portfolio",
-
-		detailsURL: "/portfolio_website",
-
-		stack: ["React", "Tailwind CSS", "Render", "GSAP"],
-
-		objective:
-			"Design and develop a portfolio website using React and Tailwind.",
-
-		backgroundStory: [
-			"After completing several projects, I decided it was time to showcase them, along with my learning journey, gained experience, and skills, in a portfolio website.",
-
-			"I envisioned the app with a minimalist design and a dark mode, which I find more comfortable to use. The goal was to emphasize the projects and their details while creating an easy-to-navigate, responsive website that offers a pleasant user experience with clear and concise information.",
-
-			"For styling, I opted to use Tailwind CSS. I wanted to gain experience with this utility-first CSS framework, having already worked with Bootstrap. I found utility classes to be an efficient way to style components, and I had read that Tailwind is well-suited for small projects like this one.",
-
-			"To further enhance the user experience, I incorporated introductory animations using the GSAP library.",
-		],
-
-		techDetails: {
-			Functionality:
-				"Users can navigate the website and view my projects, skills, and background.",
-
-			Frontend:
-				"Built with React using Tailwind CSS utility classes for styling.",
-
-			UI: "Follows desktop-first design principles with responsive optimization for mobile viewing.",
-
-			UX: "Designed for easy navigation and provides clear and concise information.",
-
-			"Design Pattern":
-				"Follows a minimalist design pattern in dark mode, with a focus on showcasing projects.",
-
-			"Version Control": "Utilizes Git and GitHub for version control.",
-
-			"CI/CD":
-				"Deployed through Render for Continuous Integration and Continuous Deployment.",
-		},
-
-		whatIHaveLearned: [
-			"Enhanced my proficiency in React, including building responsive web applications and utilizing React's component-based architecture",
-
-			"Gained experience in using Tailwind CSS utility classes for efficient and responsive web styling.",
-
-			"Developed an understanding of design patterns, color theory, and typography to create visually appealing and user-friendly interfaces.",
 		],
 	},
 ];
