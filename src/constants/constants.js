@@ -102,149 +102,150 @@ export const PROJECTS = [
 			"How to configure and use Zoho mail.",
 		],
 	},
-	{
-		name: "Restil",
 
-		description:
-			"Online secondhand clothing marketplace for the Romanian market, promoting sustainable shopping.",
+	// {
+	// 	name: "Restil",
 
-		image: "/assets/images/restil.webp",
+	// 	description:
+	// 		"Online secondhand clothing marketplace for the Romanian market, promoting sustainable shopping.",
 
-		siteURL: "https://restil.ro/",
+	// 	image: "/assets/images/restil.webp",
 
-		// gitHub: "https://github.com/zebetul/refashion-secondhand-marketplace",
+	// 	siteURL: "https://restil.ro/",
 
-		detailsURL: "/restil",
+	// 	// gitHub: "https://github.com/zebetul/refashion-secondhand-marketplace",
 
-		stack: [
-			"React",
-			"Node",
-			"Express",
-			"PSQL",
-			"AWS",
-			"Bootstrap",
-			"Google 0Auth",
-			"Render",
-			"Cloudflare",
-			"PWA",
-		],
+	// 	detailsURL: "/restil",
 
-		objective:
-			"Design, develop, test, and deploy a full-stack, production-ready web application using the latest industry standards and best practices.",
+	// 	stack: [
+	// 		"React",
+	// 		"Node",
+	// 		"Express",
+	// 		"PSQL",
+	// 		"AWS",
+	// 		"Bootstrap",
+	// 		"Google 0Auth",
+	// 		"Render",
+	// 		"Cloudflare",
+	// 		"PWA",
+	// 	],
 
-		backgroundStory: [
-			"After completing a JavaScript Udemy course and gaining experience with several JS projects, I felt confident in my JS skills and decided to delve into React.",
+	// 	objective:
+	// 		"Design, develop, test, and deploy a full-stack, production-ready web application using the latest industry standards and best practices.",
 
-			"While seeking a new project to apply my recently acquired React knowledge, I aimed for a challenge that would also have real-life utility. That's when a friend challenged me to create a secondhand clothing marketplace, an idea that aligned perfectly with my goals.",
+	// 	backgroundStory: [
+	// 		"After completing a JavaScript Udemy course and gaining experience with several JS projects, I felt confident in my JS skills and decided to delve into React.",
 
-			"Given the project's complexity compared to my previous work, I was determined to adhere to industry standards and best practices. Thankfully, we live in an era where Chat GPT, one of the world's best teachers, is available 24/7. Chat GPT proved invaluable in helping me break down, organize, plan, and design the project. Although it takes some time to master, Chat GPT is a game-changer for efficient work.",
+	// 		"While seeking a new project to apply my recently acquired React knowledge, I aimed for a challenge that would also have real-life utility. That's when a friend challenged me to create a secondhand clothing marketplace, an idea that aligned perfectly with my goals.",
 
-			"After initial discussions about the project and it's requirements, I opted for PostgreSQL as the database. Its relational nature suited the project well, and I saw it as an opportunity to learn more about relational databases.",
+	// 		"Given the project's complexity compared to my previous work, I was determined to adhere to industry standards and best practices. Thankfully, we live in an era where Chat GPT, one of the world's best teachers, is available 24/7. Chat GPT proved invaluable in helping me break down, organize, plan, and design the project. Although it takes some time to master, Chat GPT is a game-changer for efficient work.",
 
-			"Recognizing the need for meticulous organization, I turned to Trello to track tasks and maintain a clear project overview. I adopted a Kanban approach and created separate Trello boards for frontend, backend, and the database. The frontend board featured a detailed action plan with cards for every React app page component.",
+	// 		"After initial discussions about the project and it's requirements, I opted for PostgreSQL as the database. Its relational nature suited the project well, and I saw it as an opportunity to learn more about relational databases.",
 
-			"Learning React was a gratifying experience, especially after managing state in a previous JavaScript project without library support. Witnessing React's built-in capabilities was impressive. Node and Express also proved enjoyable to learn, given my prior experience. PostgreSQL presented a greater challenge due to the need to learn SQL, but I grasped the basics and successfully implemented them with Knex.",
+	// 		"Recognizing the need for meticulous organization, I turned to Trello to track tasks and maintain a clear project overview. I adopted a Kanban approach and created separate Trello boards for frontend, backend, and the database. The frontend board featured a detailed action plan with cards for every React app page component.",
 
-			"Choosing a cloud service provider led me to AWS, drawn by its diverse service offerings. I believe cloud computing will play a pivotal role in the future of technology and wanted to become proficient in it.",
+	// 		"Learning React was a gratifying experience, especially after managing state in a previous JavaScript project without library support. Witnessing React's built-in capabilities was impressive. Node and Express also proved enjoyable to learn, given my prior experience. PostgreSQL presented a greater challenge due to the need to learn SQL, but I grasped the basics and successfully implemented them with Knex.",
 
-			"Extensive documentation reading was a continuous practice, including during the implementation of Google's OAuth 2.0 for user authentication and authorization. I preferred to avoid libraries that abstracted too much, as I valued a deep understanding of the underlying processes. Overcoming session cookie authentication and authorization challenges, particularly on Safari and Brave browsers, required purchasing a domain name, hosting it on Cloudflare's DNS, and proxying the backend through a subdomain, ensuring cross-browser functionality.",
+	// 		"Choosing a cloud service provider led me to AWS, drawn by its diverse service offerings. I believe cloud computing will play a pivotal role in the future of technology and wanted to become proficient in it.",
 
-			"Thorough research was essential to comprehend internet protocols and secure data transfer. One of the upcoming features will be the implementation of Google's new Federated Identity Manager, set to replace OAuth 2.0 as the standard for user authentication and authorization from 2024.",
+	// 		"Extensive documentation reading was a continuous practice, including during the implementation of Google's OAuth 2.0 for user authentication and authorization. I preferred to avoid libraries that abstracted too much, as I valued a deep understanding of the underlying processes. Overcoming session cookie authentication and authorization challenges, particularly on Safari and Brave browsers, required purchasing a domain name, hosting it on Cloudflare's DNS, and proxying the backend through a subdomain, ensuring cross-browser functionality.",
 
-			"Along the journey, I created and maintained documentation using draw.io, a diagram creation tool I highly recommend. This included Component Diagrams, Database Diagrams, and Flow Charts for the buying process. Such documentation proved invaluable for maintaining a clear project overview and tracking changes.",
+	// 		"Thorough research was essential to comprehend internet protocols and secure data transfer. One of the upcoming features will be the implementation of Google's new Federated Identity Manager, set to replace OAuth 2.0 as the standard for user authentication and authorization from 2024.",
 
-			"This project was my deep dive into uncharted waters, much like how I learned to swim as a child. Challenges invigorate me, and problem-solving is my passion. I'm the type who prefers to puzzle out solutions independently rather than being told the answers. This mindset is essential in our field.",
+	// 		"Along the journey, I created and maintained documentation using draw.io, a diagram creation tool I highly recommend. This included Component Diagrams, Database Diagrams, and Flow Charts for the buying process. Such documentation proved invaluable for maintaining a clear project overview and tracking changes.",
 
-			"I'm fully aware that this project is far from perfect and requires substantial improvement. Nonetheless, I'm proud of its progress and my ability to bring it this far. I've learned a great deal along the way, and I'm confident that it will continue to be a rich source of learning in the future.",
-		],
+	// 		"This project was my deep dive into uncharted waters, much like how I learned to swim as a child. Challenges invigorate me, and problem-solving is my passion. I'm the type who prefers to puzzle out solutions independently rather than being told the answers. This mindset is essential in our field.",
 
-		techDetails: {
-			Functionality:
-				"Users can search for items using various filters. They can also register to list items for sale, make purchases, contact other users, and manage their accounts.",
+	// 		"I'm fully aware that this project is far from perfect and requires substantial improvement. Nonetheless, I'm proud of its progress and my ability to bring it this far. I've learned a great deal along the way, and I'm confident that it will continue to be a rich source of learning in the future.",
+	// 	],
 
-			Frontend:
-				"Built with React using Bootstrap utility classes for styling and incorporating specific React components.",
+	// 	techDetails: {
+	// 		Functionality:
+	// 			"Users can search for items using various filters. They can also register to list items for sale, make purchases, contact other users, and manage their accounts.",
 
-			UI: "Follows responsive design principles with a mobile-first approach.",
+	// 		Frontend:
+	// 			"Built with React using Bootstrap utility classes for styling and incorporating specific React components.",
 
-			UX: "Enhanced engagement with product-focused image sliders.",
+	// 		UI: "Follows responsive design principles with a mobile-first approach.",
 
-			"Design pattern":
-				"Follows a minimalist design pattern, with a focus on showcasing listed products.",
+	// 		UX: "Enhanced engagement with product-focused image sliders.",
 
-			PWA: "Implemented as a Progressive Web App (PWA) to provide users with offline access and an app-like experience.",
+	// 		"Design pattern":
+	// 			"Follows a minimalist design pattern, with a focus on showcasing listed products.",
 
-			Backend: "Built with Node.js and Express.js.",
+	// 		PWA: "Implemented as a Progressive Web App (PWA) to provide users with offline access and an app-like experience.",
 
-			Database: "Connected PostgreSQL to the backend using the Knex library.",
+	// 		Backend: "Built with Node.js and Express.js.",
 
-			"Data Protection":
-				"Bcrypt library for password hashing. CORS is set up to allow only specified origins. Middleware protects private routes, authenticating users with session cookies.",
+	// 		Database: "Connected PostgreSQL to the backend using the Knex library.",
 
-			Authentication:
-				"Utilizes Google OAuth 2.0 and email/password sign-up (passwords hashed with bcrypt and saved to the database) for user authentication.",
+	// 		"Data Protection":
+	// 			"Bcrypt library for password hashing. CORS is set up to allow only specified origins. Middleware protects private routes, authenticating users with session cookies.",
 
-			Authorization: "Session cookies are employed for authorization.",
+	// 		Authentication:
+	// 			"Utilizes Google OAuth 2.0 and email/password sign-up (passwords hashed with bcrypt and saved to the database) for user authentication.",
 
-			"Image Processing":
-				"Images are processed using the Sharp library before being uploaded to AWS.",
+	// 		Authorization: "Session cookies are employed for authorization.",
 
-			"Image Storage":
-				"The AWS S3 SDK is used to programmatically put, get, and delete images from the bucket.",
+	// 		"Image Processing":
+	// 			"Images are processed using the Sharp library before being uploaded to AWS.",
 
-			"PDF Handling":
-				"Utilizes the react-pdf library for embedding PDF documents in the app and displaying them as pages in the browser.",
+	// 		"Image Storage":
+	// 			"The AWS S3 SDK is used to programmatically put, get, and delete images from the bucket.",
 
-			Performance: "Bundled with Webpack, polyfilled, and transpiled.",
+	// 		"PDF Handling":
+	// 			"Utilizes the react-pdf library for embedding PDF documents in the app and displaying them as pages in the browser.",
 
-			"Version Control": "Git and GitHub.",
+	// 		Performance: "Bundled with Webpack, polyfilled, and transpiled.",
 
-			"CI/CD":
-				"Deployed through Render for Continuous Integration and Continuous Deployment.",
+	// 		"Version Control": "Git and GitHub.",
 
-			DNS: "Configured with Cloudflare.",
+	// 		"CI/CD":
+	// 			"Deployed through Render for Continuous Integration and Continuous Deployment.",
 
-			"Email Server": "Utilizes AWS SES (Simple Email Service).",
+	// 		DNS: "Configured with Cloudflare.",
 
-			Testing: "Google Lighthouse and manual testing.",
-		},
+	// 		"Email Server": "Utilizes AWS SES (Simple Email Service).",
 
-		whatIHaveLearned: [
-			"React.js, React Hooks, React Router",
+	// 		Testing: "Google Lighthouse and manual testing.",
+	// 	},
 
-			'Node.js and Express.js, including "Express Middleware" Express File Upload and Cookie Parser.',
+	// 	whatIHaveLearned: [
+	// 		"React.js, React Hooks, React Router",
 
-			"How to setup Google OAuth 2.0 for user authentication and authorization.",
+	// 		'Node.js and Express.js, including "Express Middleware" Express File Upload and Cookie Parser.',
 
-			"CORS (Cross-Origin Resource Sharing) and how to use cookies",
+	// 		"How to setup Google OAuth 2.0 for user authentication and authorization.",
 
-			'PostgreSQL, including "Knex" library for connecting to the database.',
+	// 		"CORS (Cross-Origin Resource Sharing) and how to use cookies",
 
-			'SQL statements for CRUD operations, including "JOIN" and "ARRAY_AGG".',
+	// 		'PostgreSQL, including "Knex" library for connecting to the database.',
 
-			"How to plan a project using tools like Trello and draw.io.",
+	// 		'SQL statements for CRUD operations, including "JOIN" and "ARRAY_AGG".',
 
-			"Kanban project management methodology.",
+	// 		"How to plan a project using tools like Trello and draw.io.",
 
-			"How to read documentation effectively.",
+	// 		"Kanban project management methodology.",
 
-			"How to programmatically resize images using Sharp library.",
+	// 		"How to read documentation effectively.",
 
-			"How to interact programatically with AWS S3 through SDK.",
+	// 		"How to programmatically resize images using Sharp library.",
 
-			"How to configure and use AWS SES service for programatically send emails.",
+	// 		"How to interact programatically with AWS S3 through SDK.",
 
-			'SEO best practices, including "meta" tags, "robots.txt" and structured data from Schema.org.',
+	// 		"How to configure and use AWS SES service for programatically send emails.",
 
-			"Google Lighthouse testing and how to improve performance, accessibility, best practices, and SEO.",
+	// 		'SEO best practices, including "meta" tags, "robots.txt" and structured data from Schema.org.',
 
-			"What is PWA (Progressive Web App) and how to implement it.",
+	// 		"Google Lighthouse testing and how to improve performance, accessibility, best practices, and SEO.",
 
-			"Getting familiar with AWS Console and IAM (Identity and Access Management), setting up users, roles, and policies.",
+	// 		"What is PWA (Progressive Web App) and how to implement it.",
 
-			"How to setup a DNS zone with Cloudflare and configure domains and subdomains.",
-		],
-	},
+	// 		"Getting familiar with AWS Console and IAM (Identity and Access Management), setting up users, roles, and policies.",
+
+	// 		"How to setup a DNS zone with Cloudflare and configure domains and subdomains.",
+	// 	],
+	// },
 
 	{
 		name: "Avocat Simona Oros",
