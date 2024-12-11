@@ -1,5 +1,80 @@
 export const PROJECTS = [
 	{
+		name: "Programari Clinica Mentalife",
+
+		description: "Online appointment booking module for Mentalife Clinic.",
+
+		image: "/assets/images/mentalife.webp",
+
+		siteURL: "https://programari.clinica-mentalife.ro/",
+
+		detailsURL: "/mentalife",
+
+		stack: ["React", "Vite", "Shadcn", "Tailwind CSS", "Supabase", "Netlify"],
+
+		objective:
+			"The client needed an online appointment booking module for their clinic's website connected to their internal management system.",
+
+		backgroundStory: [
+			"Mentalife Clinic operates with an internal management system to manage appointments, patients, and doctors. Previously, appointments were booked exclusively via phone, requiring receptionists to manually handle the scheduling process. To streamline this process and improve patient convenience, the clinic sought an online appointment booking module. This module would enable patients to browse available time slots, book appointments directly through the website, and receive automated confirmation emails.",
+		],
+
+		techDetails: {
+			Functionality:
+				"Users can book appointments online, view available time slots for doctors, and receive automated confirmation emails. Admins manage appointments via the clinic's internal system.",
+
+			Frontend:
+				"Built with React, utilizing the Shadcn component library and styled with Tailwind CSS.",
+
+			UI: "Responsive and user-friendly interface designed to adapt seamlessly to desktop and mobile screens.",
+
+			UX: "Focused on simplicity and accessibility, providing an intuitive booking experience.",
+
+			"Design pattern":
+				"Adopts a clean and modern design with emphasis on usability and quick navigation. Follows the clinic's branding guidelines and the website's overall aesthetic.",
+
+			Backend:
+				"Implemented with Supabase edge functions to connect the frontend with the internal management system.",
+
+			Database:
+				"Supabase PostgreSQL serves as the database for storing user and appointment data.",
+
+			"Data Protection":
+				"Data encrypted during transmission. Row Level Security (RLS) implemented to protect sensitive data. SSL for secure data transfer. GDPR compliance.",
+
+			"Email Notifications":
+				"Automated email notifications sent using Resend for booking confirmations or cancellations.",
+
+			Performance:
+				"Bundled with Vite for optimized builds and fast development experience.",
+
+			"Version Control": "Git and GitHub for source control.",
+
+			"CI/CD": "Deployed using Netlify for continuous deployment.",
+
+			DNS: "Deployed on a custom subdomain on the clinic's website using cpanel.",
+
+			Testing: "Manual testing and debugging through browser developer tools.",
+		},
+
+		whatIHaveLearned: [
+			"How to build modern user interfaces using React and Shadcn components.",
+
+			"Supabase edge functions for serverless backend logic.",
+
+			"Efficient data fetching and querying with PostgreSQL and Supabase.",
+
+			"How to automate email notifications for user interactions using Resend.",
+
+			"Responsive design principles to create cross-platform interfaces.",
+
+			"How to connect external systems with internal APIs for real-time updates.",
+
+			"Testing user flows and debugging using browser developer tools.",
+		],
+	},
+
+	{
 		name: "ePhones",
 
 		description:
@@ -102,150 +177,6 @@ export const PROJECTS = [
 			"How to configure and use Zoho mail.",
 		],
 	},
-
-	// {
-	// 	name: "Restil",
-
-	// 	description:
-	// 		"Online secondhand clothing marketplace for the Romanian market, promoting sustainable shopping.",
-
-	// 	image: "/assets/images/restil.webp",
-
-	// 	siteURL: "https://restil.ro/",
-
-	// 	// gitHub: "https://github.com/zebetul/refashion-secondhand-marketplace",
-
-	// 	detailsURL: "/restil",
-
-	// 	stack: [
-	// 		"React",
-	// 		"Node",
-	// 		"Express",
-	// 		"PSQL",
-	// 		"AWS",
-	// 		"Bootstrap",
-	// 		"Google 0Auth",
-	// 		"Render",
-	// 		"Cloudflare",
-	// 		"PWA",
-	// 	],
-
-	// 	objective:
-	// 		"Design, develop, test, and deploy a full-stack, production-ready web application using the latest industry standards and best practices.",
-
-	// 	backgroundStory: [
-	// 		"After completing a JavaScript Udemy course and gaining experience with several JS projects, I felt confident in my JS skills and decided to delve into React.",
-
-	// 		"While seeking a new project to apply my recently acquired React knowledge, I aimed for a challenge that would also have real-life utility. That's when a friend challenged me to create a secondhand clothing marketplace, an idea that aligned perfectly with my goals.",
-
-	// 		"Given the project's complexity compared to my previous work, I was determined to adhere to industry standards and best practices. Thankfully, we live in an era where Chat GPT, one of the world's best teachers, is available 24/7. Chat GPT proved invaluable in helping me break down, organize, plan, and design the project. Although it takes some time to master, Chat GPT is a game-changer for efficient work.",
-
-	// 		"After initial discussions about the project and it's requirements, I opted for PostgreSQL as the database. Its relational nature suited the project well, and I saw it as an opportunity to learn more about relational databases.",
-
-	// 		"Recognizing the need for meticulous organization, I turned to Trello to track tasks and maintain a clear project overview. I adopted a Kanban approach and created separate Trello boards for frontend, backend, and the database. The frontend board featured a detailed action plan with cards for every React app page component.",
-
-	// 		"Learning React was a gratifying experience, especially after managing state in a previous JavaScript project without library support. Witnessing React's built-in capabilities was impressive. Node and Express also proved enjoyable to learn, given my prior experience. PostgreSQL presented a greater challenge due to the need to learn SQL, but I grasped the basics and successfully implemented them with Knex.",
-
-	// 		"Choosing a cloud service provider led me to AWS, drawn by its diverse service offerings. I believe cloud computing will play a pivotal role in the future of technology and wanted to become proficient in it.",
-
-	// 		"Extensive documentation reading was a continuous practice, including during the implementation of Google's OAuth 2.0 for user authentication and authorization. I preferred to avoid libraries that abstracted too much, as I valued a deep understanding of the underlying processes. Overcoming session cookie authentication and authorization challenges, particularly on Safari and Brave browsers, required purchasing a domain name, hosting it on Cloudflare's DNS, and proxying the backend through a subdomain, ensuring cross-browser functionality.",
-
-	// 		"Thorough research was essential to comprehend internet protocols and secure data transfer. One of the upcoming features will be the implementation of Google's new Federated Identity Manager, set to replace OAuth 2.0 as the standard for user authentication and authorization from 2024.",
-
-	// 		"Along the journey, I created and maintained documentation using draw.io, a diagram creation tool I highly recommend. This included Component Diagrams, Database Diagrams, and Flow Charts for the buying process. Such documentation proved invaluable for maintaining a clear project overview and tracking changes.",
-
-	// 		"This project was my deep dive into uncharted waters, much like how I learned to swim as a child. Challenges invigorate me, and problem-solving is my passion. I'm the type who prefers to puzzle out solutions independently rather than being told the answers. This mindset is essential in our field.",
-
-	// 		"I'm fully aware that this project is far from perfect and requires substantial improvement. Nonetheless, I'm proud of its progress and my ability to bring it this far. I've learned a great deal along the way, and I'm confident that it will continue to be a rich source of learning in the future.",
-	// 	],
-
-	// 	techDetails: {
-	// 		Functionality:
-	// 			"Users can search for items using various filters. They can also register to list items for sale, make purchases, contact other users, and manage their accounts.",
-
-	// 		Frontend:
-	// 			"Built with React using Bootstrap utility classes for styling and incorporating specific React components.",
-
-	// 		UI: "Follows responsive design principles with a mobile-first approach.",
-
-	// 		UX: "Enhanced engagement with product-focused image sliders.",
-
-	// 		"Design pattern":
-	// 			"Follows a minimalist design pattern, with a focus on showcasing listed products.",
-
-	// 		PWA: "Implemented as a Progressive Web App (PWA) to provide users with offline access and an app-like experience.",
-
-	// 		Backend: "Built with Node.js and Express.js.",
-
-	// 		Database: "Connected PostgreSQL to the backend using the Knex library.",
-
-	// 		"Data Protection":
-	// 			"Bcrypt library for password hashing. CORS is set up to allow only specified origins. Middleware protects private routes, authenticating users with session cookies.",
-
-	// 		Authentication:
-	// 			"Utilizes Google OAuth 2.0 and email/password sign-up (passwords hashed with bcrypt and saved to the database) for user authentication.",
-
-	// 		Authorization: "Session cookies are employed for authorization.",
-
-	// 		"Image Processing":
-	// 			"Images are processed using the Sharp library before being uploaded to AWS.",
-
-	// 		"Image Storage":
-	// 			"The AWS S3 SDK is used to programmatically put, get, and delete images from the bucket.",
-
-	// 		"PDF Handling":
-	// 			"Utilizes the react-pdf library for embedding PDF documents in the app and displaying them as pages in the browser.",
-
-	// 		Performance: "Bundled with Webpack, polyfilled, and transpiled.",
-
-	// 		"Version Control": "Git and GitHub.",
-
-	// 		"CI/CD":
-	// 			"Deployed through Render for Continuous Integration and Continuous Deployment.",
-
-	// 		DNS: "Configured with Cloudflare.",
-
-	// 		"Email Server": "Utilizes AWS SES (Simple Email Service).",
-
-	// 		Testing: "Google Lighthouse and manual testing.",
-	// 	},
-
-	// 	whatIHaveLearned: [
-	// 		"React.js, React Hooks, React Router",
-
-	// 		'Node.js and Express.js, including "Express Middleware" Express File Upload and Cookie Parser.',
-
-	// 		"How to setup Google OAuth 2.0 for user authentication and authorization.",
-
-	// 		"CORS (Cross-Origin Resource Sharing) and how to use cookies",
-
-	// 		'PostgreSQL, including "Knex" library for connecting to the database.',
-
-	// 		'SQL statements for CRUD operations, including "JOIN" and "ARRAY_AGG".',
-
-	// 		"How to plan a project using tools like Trello and draw.io.",
-
-	// 		"Kanban project management methodology.",
-
-	// 		"How to read documentation effectively.",
-
-	// 		"How to programmatically resize images using Sharp library.",
-
-	// 		"How to interact programatically with AWS S3 through SDK.",
-
-	// 		"How to configure and use AWS SES service for programatically send emails.",
-
-	// 		'SEO best practices, including "meta" tags, "robots.txt" and structured data from Schema.org.',
-
-	// 		"Google Lighthouse testing and how to improve performance, accessibility, best practices, and SEO.",
-
-	// 		"What is PWA (Progressive Web App) and how to implement it.",
-
-	// 		"Getting familiar with AWS Console and IAM (Identity and Access Management), setting up users, roles, and policies.",
-
-	// 		"How to setup a DNS zone with Cloudflare and configure domains and subdomains.",
-	// 	],
-	// },
 
 	{
 		name: "Avocat Simona Oros",
